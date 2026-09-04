@@ -253,5 +253,739 @@ gap: 15px;
     text-align: center;
 }
 
+}
+
+/* =========================================================
+   SONIDO VIVO
+   RESPONSIVE MOBILE FIRST
+   SERVICIOS + HEADER + FOOTER
+   ========================================================= */
+
+
+/* =========================================================
+   1. HEADER - BASE MÓVIL
+   ========================================================= */
+
+.cabecera-sitio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    padding: 1rem 5%;
+
+    background-color: #0d212d;
+    border-bottom: 1px solid #1e3a4c;
+}
+
+
+/* Marca / logo */
+
+.marca {
+    display: inline-flex;
+    align-items: center;
+
+    color: #ffffff;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.marca img {
+    display: block;
+
+    width: 9rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   BOTÓN HAMBURGUESA
+   ========================================================= */
+
+.boton-menu {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.55rem 0.75rem;
+
+    color: #ffffff;
+
+    background-color: transparent;
+
+    border: 1px solid #2dd4bf;
+    border-radius: 0.4rem;
+
+    font: inherit;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+
+.boton-menu:hover {
+    background-color: #123343;
+}
+
+
+.boton-menu:focus-visible {
+    outline: 3px solid #2dd4bf;
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   NAVEGACIÓN MÓVIL
+   ========================================================= */
+
+.navegacion-principal {
+    display: none;
+
+    width: 100%;
+}
+
+
+/*
+   JavaScript agrega esta clase
+   cuando el usuario abre el menú.
+*/
+
+.navegacion-principal.menu-abierto {
+    display: block;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0.75rem 0 0;
+
+    list-style: none;
+}
+
+
+.menu li {
+    width: 100%;
+}
+
+
+.menu a {
+    display: block;
+
+    width: 100%;
+
+    padding: 0.75rem;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 0.3rem;
+}
+
+
+.menu a:hover {
+    color: #2dd4bf;
+
+    background-color: #123343;
+}
+
+
+.menu a[aria-current="page"] {
+    color: #2dd4bf;
+
+    font-weight: bold;
+}
+
+
+.menu a:focus-visible {
+    outline: 3px solid #2dd4bf;
+    outline-offset: 2px;
+}
+
+
+
+/* =========================================================
+   2. SERVICIOS - BASE MÓVIL
+   ========================================================= */
+
+.pagina-servicios {
+    width: 90%;
+    max-width: 75rem;
+
+    margin-inline: auto;
+
+    padding-block: 2rem 4rem;
+}
+
+
+/* =========================================================
+   ENCABEZADO DE LA PÁGINA
+   ========================================================= */
+
+.encabezado-pagina {
+    margin-bottom: 2rem;
+}
+
+
+.encabezado-pagina .etiqueta {
+    margin-bottom: 0.5rem;
+
+    color: #2dd4bf;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+
+.encabezado-pagina h1 {
+    margin-bottom: 1rem;
+
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+
+.encabezado-pagina > p:last-child {
+    max-width: 45rem;
+
+    color: #94a3b8;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   INFORMACIÓN DEL SERVICIO
+   ========================================================= */
+
+.informacion-servicio {
+    margin-bottom: 2rem;
+
+    padding: 1.25rem;
+
+    background-color: #0d212d;
+
+    border: 1px solid #1e3a4c;
+    border-radius: 0.6rem;
+}
+
+
+.informacion-servicio h2 {
+    margin-bottom: 1rem;
+}
+
+
+.informacion-servicio ol {
+    padding-left: 1.3rem;
+}
+
+
+.informacion-servicio li {
+    margin-bottom: 0.75rem;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================================
+   3. FORMULARIO
+   ========================================================= */
+
+.seccion-formulario {
+    padding: 1.25rem;
+
+    background-color: #0d212d;
+
+    border: 1px solid #1e3a4c;
+    border-radius: 0.6rem;
+}
+
+
+.seccion-formulario h2 {
+    margin-bottom: 0.75rem;
+}
+
+
+.seccion-formulario > p {
+    color: #94a3b8;
+
+    line-height: 1.5;
+}
+
+
+.formulario-servicio {
+    display: grid;
+
+    gap: 1.25rem;
+
+    margin-top: 1.5rem;
+}
+
+
+
+/* =========================================================
+   FIELDSET
+   ========================================================= */
+
+.formulario-servicio fieldset {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+
+    margin: 0;
+    padding: 1rem;
+
+    border: 1px solid #1e3a4c;
+    border-radius: 0.4rem;
+}
+
+
+.formulario-servicio legend {
+    padding-inline: 0.5rem;
+
+    color: #2dd4bf;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.campo-formulario {
+    display: grid;
+
+    gap: 0.4rem;
+}
+
+
+.campo-formulario label {
+    font-weight: 600;
+}
+
+
+.formulario-servicio input,
+.formulario-servicio select,
+.formulario-servicio textarea {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    color: #041018;
+
+    background-color: #ffffff;
+
+    border: 1px solid #94a3b8;
+    border-radius: 0.3rem;
+
+    font: inherit;
+}
+
+
+.formulario-servicio textarea {
+    min-height: 8rem;
+
+    resize: vertical;
+}
+
+
+.formulario-servicio input:focus,
+.formulario-servicio select:focus,
+.formulario-servicio textarea:focus {
+    outline: 3px solid #2dd4bf;
+    outline-offset: 2px;
+}
+
+
+
+/* =========================================================
+   MENSAJES DE ERROR
+   ========================================================= */
+
+.mensaje-error {
+    display: block;
+
+    min-height: 1.2rem;
+
+    color: #fca5a5;
+
+    font-size: 0.9rem;
+}
+
+
+.campo-invalido {
+    border-color: #f87171 !important;
+}
+
+
+
+/* =========================================================
+   CHECKBOX
+   ========================================================= */
+
+.aceptacion {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 0.6rem;
+
+    line-height: 1.5;
+}
+
+
+.formulario-servicio .aceptacion input {
+    width: auto;
+
+    margin-top: 0.25rem;
+}
+
+
+
+/* =========================================================
+   BOTÓN DEL FORMULARIO
+   ========================================================= */
+
+.formulario-servicio button[type="submit"] {
+    width: 100%;
+
+    padding: 0.8rem 1.25rem;
+
+    color: #ffffff;
+
+    background-color: #14b8a6;
+
+    border: 0;
+    border-radius: 0.4rem;
+
+    font: inherit;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.formulario-servicio button[type="submit"]:hover {
+    background-color: #0d9488;
+}
+
+
+.formulario-servicio button[type="submit"]:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+
+
+/* =========================================================
+   MENSAJE GENERAL DEL FORMULARIO
+   ========================================================= */
+
+#mensaje-formulario {
+    min-height: 1.5rem;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   CAMPO QUE DEBE OCUPAR TODO EL ANCHO
+   ========================================================= */
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+
+
+/* =========================================================
+   4. FOOTER - BASE MÓVIL
+   ========================================================= */
+
+.pie-sitio {
+    width: 100%;
+
+    background-color: #0d212d;
+
+    border-top: 1px solid #1e3a4c;
+}
+
+
+.footer-contenido {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.75rem;
+
+    width: 90%;
+    max-width: 75rem;
+
+    margin-inline: auto;
+
+    padding-block: 2rem;
+
+    text-align: left;
+}
+
+
+.footer-contenido h2,
+.footer-contenido h3 {
+    margin-bottom: 0.75rem;
+}
+
+
+.footer-contenido p {
+    line-height: 1.5;
+}
+
+
+.footer-contenido ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.footer-contenido li {
+    margin-bottom: 0.5rem;
+}
+
+
+.footer-contenido a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.footer-contenido a:hover {
+    color: #2dd4bf;
+}
+
+
+.footer-contenido a[aria-current="page"] {
+    color: #2dd4bf;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================================================
+   TABLET
+   DESDE 768 PX
+   48rem × 16px = 768px
+   ========================================================= */
+
+@media (min-width: 48rem) {
+
+    /* =====================
+       HEADER TABLET
+       ===================== */
+
+    .cabecera-sitio {
+        flex-wrap: nowrap;
+    }
+
+
+    .boton-menu {
+        display: none;
+    }
+
+
+    .navegacion-principal,
+    .navegacion-principal.menu-abierto {
+        display: block;
+
+        width: auto;
+    }
+
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        gap: 0.5rem;
+
+        width: auto;
+
+        padding: 0;
+    }
+
+
+    .menu li {
+        width: auto;
+    }
+
+
+    .menu a {
+        width: auto;
+
+        padding: 0.6rem 0.8rem;
+    }
+
+
+
+    /* =====================
+       SERVICIOS TABLET
+       ===================== */
+
+    .encabezado-pagina h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .informacion-servicio {
+        padding: 1.5rem;
+    }
+
+
+    .seccion-formulario {
+        padding: 1.5rem;
+    }
+
+
+
+    /* Dos columnas dentro
+       de cada fieldset */
+
+    .formulario-servicio fieldset {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 1.25rem;
+    }
+
+
+    /*
+       Descripción u otros campos
+       con campo-completo ocupan
+       las dos columnas.
+    */
+
+    .campo-completo {
+        grid-column: 1 / -1;
+    }
+
+
+
+    /* Botón deja de ocupar
+       todo el ancho */
+
+    .formulario-servicio button[type="submit"] {
+        width: fit-content;
+    }
+
+
+
+    /* =====================
+       FOOTER TABLET
+       ===================== */
+
+    .footer-contenido {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 2rem;
+    }
+
+}
+
+
+
+/* =========================================================
+   ESCRITORIO
+   DESDE 1280 PX
+   80rem × 16px = 1280px
+   ========================================================= */
+
+@media (min-width: 80rem) {
+
+    /* =====================
+       HEADER ESCRITORIO
+       ===================== */
+
+    .cabecera-sitio {
+        padding-inline: 8%;
+    }
+
+
+    .menu {
+        gap: 1rem;
+    }
+
+
+
+    /* =====================
+       SERVICIOS ESCRITORIO
+       ===================== */
+
+    .pagina-servicios {
+        padding-block: 3rem 5rem;
+    }
+
+
+    .encabezado-pagina {
+        margin-bottom: 2.5rem;
+    }
+
+
+    .encabezado-pagina h1 {
+        font-size: 3rem;
+    }
+
+
+    .informacion-servicio {
+        padding: 1.75rem;
+    }
+
+
+    .seccion-formulario {
+        padding: 1.75rem;
+    }
+
+
+
+    /* =====================
+       FOOTER ESCRITORIO
+       ===================== */
+
+    .footer-contenido {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+        gap: 2rem;
+    }
 
 }
