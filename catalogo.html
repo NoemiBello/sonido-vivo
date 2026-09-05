@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos de audio de Sonido Vivo">
+    <title>Catálogo | Sonido Vivo</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <a class="salto-contenido" href="#contenido-principal">
+        Ir al contenido
+    </a>
+
+    <header class="cabecera-sitio">
+
+        <a class="marca" href="index.html">
+            <img src="assets/img/logo.png" alt="Sonido Vivo">
+        </a>
+
+        <button id="boton-menu" class="boton-menu" type="button"
+            aria-label="Abrir o cerrar menú principal"
+            aria-controls="navegacion-principal"
+            aria-expanded="false">
+
+            <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="navegacion-principal" class="navegacion-principal"
+            aria-label="Navegación principal">
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main id="contenido-principal">
+
+        <section aria-labelledby="titulo-catalogo">
+
+            <h1 id="titulo-catalogo">Catálogo de productos</h1>
+
+            <div class="grilla-productos">
+
+                <article class="tarjeta-producto">
+
+                    <img src="assets/img/guitarra-schecter.jpg"
+                        alt="Guitarra eléctrica SGR by Schecter C-1 Gloss Black">
+
+                    <h2>Guitarra eléctrica SGR by Schecter C-1 Gloss Black</h2>
+
+                    <p>$279.900</p>
+
+                    <a href="producto1.html">Ver detalle</a>
+
+                </article>
+
+                <article class="tarjeta-producto">
+
+                    <img src="assets/img/microfono.jpg"
+                        alt="Micrófono dinámico vocal Shure SM58">
+
+                    <h2>Micrófono dinámico vocal Shure SM58</h2>
+
+                    <p>$129.900</p>
+
+                    <a href="producto2.html">Ver detalle</a>
+
+                </article>
+
+                <article class="tarjeta-producto">
+
+                    <img src="assets/img/amplificador-behringe.jpg"
+                        alt="Amplificador de guitarra Behringer HA-20R 20W">
+
+                    <h2>Amplificador de guitarra Behringer HA-20R 20W</h2>
+
+                    <p>$145.990</p>
+
+                    <a href="producto3.html">Ver detalle</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-sitio">
+
+        <div class="footer-contenido">
+
+            <section class="footer-columna">
+                <h2>Sonido Vivo</h2>
+                <p>Productos de audio y soluciones para mantener tus equipos siempre sonando.</p>
+            </section>
+
+            <section class="footer-columna">
+                <h2>Navegación</h2>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                </ul>
+
+            </section>
+
+            <section class="footer-columna">
+                <h2>Servicios</h2>
+                <p>Venta de productos de audio.</p>
+                <p>Reparación de equipos.</p>
+            </section>
+
+            <section class="footer-columna">
+                <h2>Contacto</h2>
+
+                <address>
+                    <p>Teléfono: +56 9 5514 2432</p>
+
+                    <p>
+                        Email:
+                        <a href="mailto:contacto@sonidovivo.cl">
+                            contacto@sonidovivo.cl
+                        </a>
+                    </p>
+                </address>
+
+            </section>
+
+        </div>
+
+        <div class="footer-inferior">
+            <p>
+                <small>© 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II</small>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
