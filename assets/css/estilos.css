@@ -55,15 +55,34 @@ max-width: 1200px;
 margin: 0 auto;
 }
 
-.presentacion {
-background-color: #0d212d;
-border: 1px solid #1e3a4c;
-border-radius: 10px;
-text-align: center;
-padding: 80px 30px;
-margin: 40px 0 60px;
-}
 
+.presentacion {
+
+  background-image:
+
+    linear-gradient(rgba(4, 16, 24, 0.55), rgba(4, 16, 24, 0.55)),
+
+    url("../img/portada.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+
+
+  border: 1px solid #1e3a4c;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  padding: 80px 30px;
+
+  margin: 40px 0 60px;
+
+}
 .etiqueta {
 color: #2dd4bf;
 font-weight: bold;
@@ -285,6 +304,16 @@ gap: 15px;
 
 /* Marca / logo */
 
+.marca img {
+
+  width: 12.5rem;
+
+  height: auto;
+
+  display: block;
+
+}
+
 .marca {
     display: inline-flex;
     align-items: center;
@@ -297,14 +326,6 @@ gap: 15px;
     text-decoration: none;
 }
 
-
-.marca img {
-    display: block;
-
-    width: 9rem;
-    max-width: 100%;
-    height: auto;
-}
 
 
 /* =========================================================
