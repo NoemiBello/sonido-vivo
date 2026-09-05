@@ -1,6 +1,6 @@
-// =============================
+
 // FORMULARIO SERVICIO TÉCNICO
-// =============================
+
 
 
 // Selección del formulario
@@ -31,9 +31,9 @@ const mensajeFormulario =
     document.querySelector("#mensaje-formulario");
 
 
-// =============================
+
 // FUNCIONES DE MENSAJES
-// =============================
+
 
 function mostrarError(control, idError, mensaje) {
 
@@ -64,9 +64,9 @@ function limpiarError(control, idError) {
 }
 
 
-// =============================
+
 // VALIDACIONES
-// =============================
+
 
 function validarNombre(valor) {
 
@@ -287,9 +287,9 @@ function validarCondiciones() {
     return true;
 }
 
-// =============================
+
 // MENÚ DE NAVEGACIÓN
-// =============================
+
 
 const botonMenu =
     document.querySelector("#boton-menu");
@@ -340,9 +340,9 @@ if (botonMenu && navegacionPrincipal) {
 
 }
 
-// =============================
+
 // PROCESAR FORMULARIO
-// =============================
+
 
 function procesarSolicitud(evento) {
 
@@ -413,9 +413,9 @@ function procesarSolicitud(evento) {
 }
 
 
-// =============================
+
 // EVENTO SUBMIT
-// =============================
+
 
 formularioServicio.addEventListener(
     "submit",
