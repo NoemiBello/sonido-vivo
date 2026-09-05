@@ -10,20 +10,25 @@
 </head>
 
 <body>
+    <a class="salto-contenido" href="#contenido-principal">
+        Ir al contenido
+    </a>
     <header class="cabecera-sitio">
-
         <a class="marca" href="index.html">
             <img src="assets/img/logo.png" alt="Sonido Vivo">
         </a>
+        <button id="boton-menu" class="boton-menu" type="button" aria-label="Abrir o cerrar menú principal"
+            aria-controls="navegacion-principal" aria-expanded="false">
 
-        <nav aria-label="Navegación principal">
+            <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="navegacion-principal" class="navegacion-principal" aria-label="Navegación principal">
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
             </ul>
         </nav>
-
     </header>
     <main id="contenido-principal">
 

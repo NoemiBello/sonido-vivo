@@ -1,312 +1,258 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tienda de productos de audio y servicios de reparación">
-    <title>Inicio | Sonido Vivo</title>
+    <meta name="description" content="Servicio de reparación de instrumentos de cuerda de Sonido Vivo">
+    <title>Servicios | Sonido Vivo</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
 <body>
-    <header class="cabecera-sitio">
 
-    <a class="marca" href="index.html">
-        <img src="assets/img/logo.png" alt="Sonido Vivo">
+    <a class="salto-contenido" href="#contenido-principal">
+        Ir al contenido
     </a>
 
-    <button
-        id="boton-menu"
-        class="boton-menu"
-        type="button"
-        aria-expanded="false"
-        aria-controls="navegacion-principal"
-        aria-label="Abrir menú de navegación">
+    <header class="cabecera-sitio">
 
-        <span aria-hidden="true">☰</span>
+        <a class="marca" href="index.html">
+            <img src="assets/img/logo.png" alt="Sonido Vivo">
+        </a>
 
-    </button>
+        <button id="boton-menu" class="boton-menu" type="button" aria-expanded="false"
+            aria-controls="navegacion-principal" aria-label="Abrir menú de navegación">
 
-    <nav
-        id="navegacion-principal"
-        class="navegacion-principal"
-        aria-label="Navegación principal">
+            <span aria-hidden="true">☰</span>
 
-        <ul class="menu">
+        </button>
 
-            <li>
-                <a href="index.html">
-                    Inicio
-                </a>
-            </li>
+        <nav id="navegacion-principal" class="navegacion-principal" aria-label="Navegación principal">
 
-            <li>
-                <a href="catalogo.html">
-                    Catálogo
-                </a>
-            </li>
+            <ul class="menu">
 
-            <li>
-                <a
-                    href="servicio.html"
-                    aria-current="page">
-                    Servicios
-                </a>
-            </li>
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
 
-        </ul>
-
-    </nav>
-
-</header>
+                <li>
+                    <a href="catalogo.html">
+                        Catálogo
+                    </a>
+                </li>
+                <li>
+                    <a href="servicios.html" aria-current="page">
+                        Servicios
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main id="contenido-principal" class="pagina-servicios">
 
-    <!-- Presentación -->
-    <header class="encabezado-pagina">
-        <p class="etiqueta">Servicio técnico</p>
+        <!-- Presentación -->
+        <header class="encabezado-pagina">
+            <p class="etiqueta">Servicio técnico</p>
 
-        <h1>Reparación de instrumentos de cuerda</h1>
+            <h1>Reparación de instrumentos de cuerda</h1>
 
-        <p>
-            En Sonido Vivo ofrecemos servicio de reparación de instrumentos
-            de cuerda. Completa el formulario para solicitar una revisión
-            de prueba de tu instrumento.
-        </p>
-    </header>
+            <p>
+                En Sonido Vivo ofrecemos servicio de reparación de instrumentos
+                de cuerda. Completa el formulario para solicitar una revisión
+                de prueba de tu instrumento.
+            </p>
+        </header>
 
 
-    <!-- Información -->
-    <section
-        class="informacion-servicio"
-        aria-labelledby="titulo-como-funciona">
+        <!-- Información -->
+        <section class="informacion-servicio" aria-labelledby="titulo-como-funciona">
 
-        <h2 id="titulo-como-funciona">
-            ¿Cómo funciona?
-        </h2>
+            <h2 id="titulo-como-funciona">
+                ¿Cómo funciona?
+            </h2>
 
-        <ol>
-            <li>
-                Ingresa tus datos de contacto.
-            </li>
+            <ol>
+                <li>
+                    Ingresa tus datos de contacto.
+                </li>
 
-            <li>
-                Selecciona el tipo de instrumento que deseas revisar.
-            </li>
+                <li>
+                    Selecciona el tipo de instrumento que deseas revisar.
+                </li>
 
-            <li>
-                Describe brevemente el problema que presenta.
-            </li>
+                <li>
+                    Describe brevemente el problema que presenta.
+                </li>
 
-            <li>
-                El formulario comprobará que la información ingresada
-                sea válida.
-            </li>
-        </ol>
+                <li>
+                    El formulario comprobará que la información ingresada
+                    sea válida.
+                </li>
+            </ol>
 
-    </section>
+        </section>
 
 
-    <!-- Formulario -->
-    <section
-        class="seccion-formulario"
-        aria-labelledby="titulo-formulario">
+        <!-- Formulario -->
+        <section class="seccion-formulario" aria-labelledby="titulo-formulario">
 
-        <h2 id="titulo-formulario">
-            Solicitar revisión
-        </h2>
+            <h2 id="titulo-formulario">
+                Solicitar revisión
+            </h2>
 
-        <p>
-            Utiliza solamente datos ficticios. Esta demostración
-            académica no envía información a un servidor.
-        </p>
-
-
-        <form
-            id="formulario-servicio"
-            class="formulario-servicio"
-            novalidate>
-
-            <!-- Datos de contacto -->
-            <fieldset>
-
-                <legend>Datos de contacto</legend>
-
-
-                <div class="campo-formulario">
-
-                    <label for="nombre">
-                        Nombre completo
-                    </label>
-
-                    <input
-                        id="nombre"
-                        name="nombre"
-                        type="text"
-                        maxlength="50"
-                        autocomplete="name"
-                        aria-describedby="error-nombre">
-
-                    <small
-                        id="error-nombre"
-                        class="mensaje-error">
-                    </small>
-
-                </div>
-
-
-                <div class="campo-formulario">
-
-                    <label for="correo">
-                        Correo electrónico
-                    </label>
-
-                    <input
-                        id="correo"
-                        name="correo"
-                        type="email"
-                        autocomplete="email"
-                        aria-describedby="error-correo">
-
-                    <small
-                        id="error-correo"
-                        class="mensaje-error">
-                    </small>
-
-                </div>
-
-
-                <div class="campo-formulario">
-
-                    <label for="telefono">
-                        Teléfono
-                    </label>
-
-                    <input
-                        id="telefono"
-                        name="telefono"
-                        type="tel"
-                        maxlength="9"
-                        autocomplete="tel"
-                        placeholder="912345678"
-                        aria-describedby="error-telefono">
-
-                    <small
-                        id="error-telefono"
-                        class="mensaje-error">
-                    </small>
-
-                </div>
-
-            </fieldset>
-
-
-            <!-- Instrumento -->
-            <fieldset>
-
-                <legend>Datos del instrumento</legend>
-
-
-                <div class="campo-formulario">
-
-                    <label for="instrumento">
-                        Tipo de instrumento
-                    </label>
-
-                    <select
-                        id="instrumento"
-                        name="instrumento"
-                        aria-describedby="error-instrumento">
-
-                        <option value="">
-                            Selecciona un instrumento
-                        </option>
-
-                        <option value="guitarra-electrica">
-                            Guitarra eléctrica
-                        </option>
-
-                        <option value="guitarra-acustica">
-                            Guitarra acústica
-                        </option>
-
-                        <option value="bajo">
-                            Bajo
-                        </option>
-
-                        <option value="otro">
-                            Otro instrumento de cuerda
-                        </option>
-
-                    </select>
-
-                    <small
-                        id="error-instrumento"
-                        class="mensaje-error">
-                    </small>
-
-                </div>
-
-
-                <div class="campo-formulario">
-
-                    <label for="descripcion">
-                        Descripción del problema
-                    </label>
-
-                    <textarea
-                        id="descripcion"
-                        name="descripcion"
-                        rows="5"
-                        maxlength="500"
-                        aria-describedby="error-descripcion"
-                        placeholder="Describe brevemente qué problema presenta el instrumento">
-                    </textarea>
-
-                    <small
-                        id="error-descripcion"
-                        class="mensaje-error">
-                    </small>
-
-                </div>
-
-            </fieldset>
-
-
-            <label class="aceptacion">
-
-                <input
-                    id="acepta-condiciones"
-                    name="aceptaCondiciones"
-                    type="checkbox"
-                    aria-describedby="error-condiciones">
-
-                Confirmo que los datos ingresados son ficticios
-                y corresponden a una demostración académica.
-
-            </label>
-
-            <small
-                id="error-condiciones"
-                class="mensaje-error">
-            </small>
-
-
-            <button type="submit">
-                Validar solicitud
-            </button>
-
-
-            <p
-                id="mensaje-formulario"
-                role="status">
+            <p>
+                Utiliza solamente datos ficticios. Esta demostración
+                académica no envía información a un servidor.
             </p>
 
-        </form>
 
-    </section>
+            <form id="formulario-servicio" class="formulario-servicio" novalidate>
 
-</main>
+                <!-- Datos de contacto -->
+                <fieldset>
+
+                    <legend>Datos de contacto</legend>
+
+
+                    <div class="campo-formulario">
+
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+
+                        <input id="nombre" name="nombre" type="text" maxlength="50" autocomplete="name"
+                            aria-describedby="error-nombre">
+
+                        <small id="error-nombre" class="mensaje-error">
+                        </small>
+
+                    </div>
+
+
+                    <div class="campo-formulario">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input id="correo" name="correo" type="email" autocomplete="email"
+                            aria-describedby="error-correo">
+
+                        <small id="error-correo" class="mensaje-error">
+                        </small>
+
+                    </div>
+
+
+                    <div class="campo-formulario">
+
+                        <label for="telefono">
+                            Teléfono
+                        </label>
+
+                        <input id="telefono" name="telefono" type="tel" maxlength="9" autocomplete="tel"
+                            placeholder="912345678" aria-describedby="error-telefono">
+
+                        <small id="error-telefono" class="mensaje-error">
+                        </small>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- Instrumento -->
+                <fieldset>
+
+                    <legend>Datos del instrumento</legend>
+
+
+                    <div class="campo-formulario">
+
+                        <label for="instrumento">
+                            Tipo de instrumento
+                        </label>
+
+                        <select id="instrumento" name="instrumento" aria-describedby="error-instrumento">
+
+                            <option value="">
+                                Selecciona un instrumento
+                            </option>
+
+                            <option value="guitarra-electrica">
+                                Guitarra eléctrica
+                            </option>
+
+                            <option value="guitarra-acustica">
+                                Guitarra acústica
+                            </option>
+
+                            <option value="bajo">
+                                Bajo
+                            </option>
+
+                            <option value="otro">
+                                Otro instrumento de cuerda
+                            </option>
+
+                        </select>
+
+                        <small id="error-instrumento" class="mensaje-error">
+                        </small>
+
+                    </div>
+
+
+                    <div class="campo-formulario">
+
+                        <label for="descripcion">
+                            Descripción del problema
+                        </label>
+
+                        <textarea id="descripcion" name="descripcion" rows="5" maxlength="500"
+                            aria-describedby="error-descripcion"
+                            placeholder="Describe brevemente qué problema presenta el instrumento">
+                    </textarea>
+
+                        <small id="error-descripcion" class="mensaje-error">
+                        </small>
+
+                    </div>
+
+                </fieldset>
+
+
+                <label class="aceptacion">
+
+                    <input id="acepta-condiciones" name="aceptaCondiciones" type="checkbox"
+                        aria-describedby="error-condiciones">
+
+                    Confirmo que los datos ingresados son ficticios
+                    y corresponden a una demostración académica.
+
+                </label>
+
+                <small id="error-condiciones" class="mensaje-error">
+                </small>
+
+
+                <button type="submit">
+                    Validar solicitud
+                </button>
+
+
+                <p id="mensaje-formulario" role="status">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
 
     <footer class="pie-sitio">
 
@@ -320,9 +266,9 @@
             <section class="footer-columna">
                 <h2>Navegación</h2>
                 <ul>
-                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
                 </ul>
             </section>
 
