@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,35 +11,75 @@
 
 <body>
 
-
-
     <header class="cabecera-sitio">
 
         <a class="marca" href="index.html">
             <img src="assets/img/logo.png" alt="Sonido Vivo">
         </a>
 
-        <button id="boton-menu" class="boton-menu" type="button"
-            aria-label="Abrir o cerrar menú principal"
-            aria-controls="navegacion-principal"
-            aria-expanded="false">
+        <button id="boton-menu" class="boton-menu" type="button" aria-label="Abrir o cerrar menú principal"
+            aria-controls="navegacion-principal" aria-expanded="false">
 
             <span aria-hidden="true">☰</span>
         </button>
 
-        <nav id="navegacion-principal" class="navegacion-principal"
-            aria-label="Navegación principal">
+        <nav id="navegacion-principal" class="navegacion-principal" aria-label="Navegación principal">
 
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
             </ul>
 
         </nav>
 
+        <button id="abrir-carrito" class="acceso-carrito" type="button" aria-label="Abrir carrito de compras">
+
+            <span class="icono-carrito" aria-hidden="true">🛒</span>
+
+            <span id="cantidad-carrito" class="cantidad-carrito">
+                0
+            </span>
+
+        </button>
+
     </header>
+
+
+    <!-- PANEL LATERAL DEL CARRITO -->
+
+    <aside id="panel-carrito" class="panel-carrito" aria-label="Carrito de compras">
+
+        <div class="panel-carrito-encabezado">
+
+            <h2>Mi carrito</h2>
+
+            <button id="cerrar-carrito" type="button" aria-label="Cerrar carrito">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="panel-carrito-contenido">
+
+            <div id="lista-carrito"></div>
+
+            <div id="acciones-carrito">
+
+                <button id="vaciar-carrito" type="button">
+                    Vaciar carrito
+                </button>
+
+                <a class="boton" href="carrito.html">
+                    Ver carrito completo
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
 
     <main id="contenido-principal">
 
@@ -63,10 +102,10 @@
 
                 </article>
 
+
                 <article class="tarjeta-producto">
 
-                    <img src="assets/img/microfono.jpg"
-                        alt="Micrófono dinámico vocal Shure SM58">
+                    <img src="assets/img/microfono.jpg" alt="Micrófono dinámico vocal Shure SM58">
 
                     <h2>Micrófono dinámico vocal Shure SM58</h2>
 
@@ -76,10 +115,10 @@
 
                 </article>
 
+
                 <article class="tarjeta-producto">
 
-                    <img src="assets/img/amplificador-behringe.jpg"
-                        alt="Amplificador de guitarra Behringer HA-20R 20W">
+                    <img src="assets/img/amplificador-behringe.jpg" alt="Amplificador de guitarra Behringer HA-20R 20W">
 
                     <h2>Amplificador de guitarra Behringer HA-20R 20W</h2>
 
@@ -95,16 +134,25 @@
 
     </main>
 
+
     <footer class="pie-sitio">
 
         <div class="footer-contenido">
 
             <section class="footer-columna">
+
                 <h2>Sonido Vivo</h2>
-                <p>Productos de audio y soluciones para mantener tus equipos siempre sonando.</p>
+
+                <p>
+                    Productos de audio y soluciones para mantener tus equipos
+                    siempre sonando.
+                </p>
+
             </section>
 
+
             <section class="footer-columna">
+
                 <h2>Navegación</h2>
 
                 <ul>
@@ -116,16 +164,23 @@
 
             </section>
 
-            <section class="footer-columna">
-                <h2>Servicios</h2>
-                <p>Venta de productos de audio.</p>
-                <p>Reparación de equipos.</p>
-            </section>
 
             <section class="footer-columna">
+
+                <h2>Servicios</h2>
+
+                <p>Venta de productos de audio.</p>
+                <p>Reparación de equipos.</p>
+
+            </section>
+
+
+            <section class="footer-columna">
+
                 <h2>Contacto</h2>
 
                 <address>
+
                     <p>Teléfono: +56 9 5514 2432</p>
 
                     <p>
@@ -134,24 +189,30 @@
                             contacto@sonidovivo.cl
                         </a>
                     </p>
+
                 </address>
 
             </section>
 
         </div>
 
+
         <div class="footer-inferior">
+
             <p>
-                <small>© 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II</small>
+                <small>
+                    © 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II
+                </small>
             </p>
+
         </div>
 
     </footer>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/productos.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/carrito.js"></script>
 
 </body>
 
 </html>
-

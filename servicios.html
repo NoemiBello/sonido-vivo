@@ -28,12 +28,49 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="servicios.html" aria-current="page">Servicios</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
             </ul>
         </nav>
+        <button id="abrir-carrito" class="acceso-carrito" type="button" aria-label="Abrir carrito de compras">
+
+            <span class="icono-carrito" aria-hidden="true">🛒</span>
+
+            <span id="cantidad-carrito" class="cantidad-carrito">
+                0
+            </span>
+
+        </button>
 
     </header>
+    <aside id="panel-carrito" class="panel-carrito" aria-label="Carrito de compras">
 
+        <div class="panel-carrito-encabezado">
+
+            <h2>Mi carrito</h2>
+
+            <button id="cerrar-carrito" type="button" aria-label="Cerrar carrito">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="panel-carrito-contenido">
+
+            <div id="lista-carrito"></div>
+
+            <div id="acciones-carrito">
+
+                <button id="vaciar-carrito" type="button">
+                    Vaciar carrito
+                </button>
+
+                <a class="boton" href="carrito.html">
+                    Ver carrito completo
+                </a>
+            </div>
+
+        </div>
+
+    </aside>
     <main id="contenido-principal" class="pagina-servicios">
 
         <!-- Presentación -->
@@ -242,8 +279,11 @@
         </div>
 
     </footer>
+
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/validaciones.js"></script>
+    <script src="assets/js/carrito.js"></script>
+
     
 </body>
 
