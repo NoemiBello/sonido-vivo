@@ -10,145 +10,137 @@
 </head>
 
 <body>
-<header class="cabecera-sitio">
+    <header class="cabecera-sitio">
 
-    <a class="marca" href="index.html">
-        <img src="assets/img/logo.png" alt="Sonido Vivo">
-    </a>
+        <a class="marca" href="index.html">
+            <img src="assets/img/logo.png" alt="Sonido Vivo">
+        </a>
 
-    <button id="boton-menu"
-        class="boton-menu"
-        type="button"
-        aria-label="Abrir o cerrar menú principal"
-        aria-controls="navegacion-principal"
-        aria-expanded="false">
+        <button id="boton-menu" class="boton-menu" type="button" aria-label="Abrir o cerrar menú principal"
+            aria-controls="navegacion-principal" aria-expanded="false">
 
-        <span aria-hidden="true">☰</span>
+            <span aria-hidden="true">☰</span>
 
-    </button>
+        </button>
 
-    <nav id="navegacion-principal"
-        class="navegacion-principal"
-        aria-label="Navegación principal">
+        <nav id="navegacion-principal" class="navegacion-principal" aria-label="Navegación principal">
 
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-        </ul>
-
-    </nav>
-
-    <a class="acceso-carrito"
-        href="carrito.html"
-        aria-label="Ir al carrito de compras">
-
-        <span class="icono-carrito" aria-hidden="true">🛒</span>
-
-        <span id="cantidad-carrito" class="cantidad-carrito">
-            0
-        </span>
-
-    </a>
-
-</header>
-<main id="contenido-principal" class="pagina-carrito">
-
-    <section class="carrito-compras">
-
-        <h1>Carrito de compras</h1>        
-        <section id="lista-carrito">
-        </section>
-
-        <div class="acciones-pagina-carrito">
-
-            <button id="vaciar-carrito" type="button">
-                Vaciar carrito
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <aside class="resumen-carrito">
-
-        <h2>Totales</h2>
-
-        <div class="fila-resumen">
-            <span>Subtotal</span>
-            <strong id="subtotal-carrito">$0</strong>
-        </div>
-
-        <div class="fila-resumen total-resumen">
-            <span>Total</span>
-            <strong id="total-pagina-carrito">$0</strong>
-        </div>
-
-    </aside>
-
-</main>
-<footer class="pie-sitio">
-
-    <div class="footer-contenido">
-
-        <section class="footer-columna">
-            <h2>Sonido Vivo</h2>
-
-            <p>
-                Productos de audio y soluciones para mantener tus equipos siempre sonando.
-            </p>
-
-            <p>Santiago, Chile</p>
-
-            <p>Lunes a viernes · 09:00 a 18:00 hrs.</p>
-        </section>
-
-        <section class="footer-columna">
-            <h2>Navegación</h2>
-
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
             </ul>
+
+        </nav>
+
+        <a class="acceso-carrito" href="carrito.html" aria-label="Ir al carrito de compras">
+
+            <span class="icono-carrito" aria-hidden="true">🛒</span>
+
+            <span id="cantidad-carrito" class="cantidad-carrito">
+                0
+            </span>
+
+        </a>
+
+    </header>
+    <main id="contenido-principal" class="pagina-carrito">
+
+        <section class="carrito-compras">
+
+            <h1>Carrito de compras</h1>
+            <section id="lista-carrito">
+            </section>
+
+            <div class="acciones-pagina-carrito">
+
+                <button id="vaciar-carrito" type="button">
+                    Vaciar carrito
+                </button>
+
+            </div>
+
         </section>
 
-        <section class="footer-columna">
-            <h2>Servicios</h2>
 
-            <p>Venta de productos de audio.</p>
-            <p>Reparación de equipos.</p>
-        </section>
+        <aside class="resumen-carrito">
 
-        <section class="footer-columna">
-            <h2>Contacto</h2>
+            <h2>Totales</h2>
 
-            <address>
+            <div class="fila-resumen">
+                <span>Subtotal</span>
+                <strong id="subtotal-carrito">$0</strong>
+            </div>
+
+            <div class="fila-resumen total-resumen">
+                <span>Total</span>
+                <strong id="total-pagina-carrito">$0</strong>
+            </div>
+
+        </aside>
+
+    </main>
+    <footer class="pie-sitio">
+
+        <div class="footer-contenido">
+
+            <section class="footer-columna">
+                <h2>Sonido Vivo</h2>
+
                 <p>
-                    Teléfono:
-                    <a href="tel:+56955142432">+56 9 5514 2432</a>
+                    Productos de audio y soluciones para mantener tus equipos siempre sonando.
                 </p>
 
-                <p>
-                    Email:
-                    <a href="mailto:contacto@sonidovivo.cl">contacto@sonidovivo.cl</a>
-                </p>
-            </address>
-        </section>
+                <p>Santiago, Chile</p>
 
-    </div>
+                <p>Lunes a viernes · 09:00 a 18:00 hrs.</p>
+            </section>
 
-    <div class="footer-inferior">
-        <p>
-            <small>
-                © 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II
-            </small>
-        </p>
-    </div>
+            <section class="footer-columna">
+                <h2>Navegación</h2>
 
-</footer>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-columna">
+                <h2>Servicios</h2>
+
+                <p>Venta de productos de audio.</p>
+                <p>Reparación de equipos.</p>
+            </section>
+
+            <section class="footer-columna">
+                <h2>Contacto</h2>
+
+                <address>
+                    <p>
+                        Teléfono:
+                        <a href="tel:+56955142432">+56 9 5514 2432</a>
+                    </p>
+
+                    <p>
+                        Email:
+                        <a href="mailto:contacto@sonidovivo.cl">contacto@sonidovivo.cl</a>
+                    </p>
+                </address>
+            </section>
+
+        </div>
+
+        <div class="footer-inferior">
+            <p>
+                <small>
+                    © 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II
+                </small>
+            </p>
+        </div>
+
+    </footer>
 
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/productos.js"></script>
