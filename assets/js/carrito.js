@@ -1,24 +1,3 @@
-const productos = [
-    {
-        id: 1,
-        nombre: "Guitarra eléctrica SGR by Schecter C-1 Gloss Black",
-        precio: 279900,
-        imagen: "assets/img/guitarra-schecter.jpg"
-    },
-    {
-        id: 2,
-        nombre: "Micrófono dinámico vocal Shure SM58",
-        precio: 129900,
-        imagen: "assets/img/microfono.jpg"
-    },
-    {
-        id: 3,
-        nombre: "Amplificador de guitarra Behringer HA-20R 20W",
-        precio: 145990,
-        imagen: "assets/img/amplificador-behringe.jpg"
-    }
-];
-
 //const carrito = [];
 
 const carritoGuardado = localStorage.getItem("carrito");
