@@ -10,37 +10,91 @@
 </head>
 
 <body>
+<header class="cabecera-sitio">
 
+    <a class="marca" href="index.html">
+        <img src="assets/img/logo.png" alt="Sonido Vivo">
+    </a>
 
-    <header class="cabecera-sitio">
-        <a class="marca" href="index.html">
-            <img src="assets/img/logo.png" alt="Sonido Vivo">
-        </a>
-        <button id="boton-menu" class="boton-menu" type="button" aria-label="Abrir o cerrar menú principal"
-            aria-controls="navegacion-principal" aria-expanded="false">
+    <button id="boton-menu"
+        class="boton-menu"
+        type="button"
+        aria-label="Abrir o cerrar menú principal"
+        aria-controls="navegacion-principal"
+        aria-expanded="false">
 
-            <span aria-hidden="true">☰</span>
-        </button>
-        <nav id="navegacion-principal" class="navegacion-principal" aria-label="Navegación principal">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="carrito.html" aria-current="page">Carrito</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="contenido-principal">
+        <span aria-hidden="true">☰</span>
+
+    </button>
+
+    <nav id="navegacion-principal"
+        class="navegacion-principal"
+        aria-label="Navegación principal">
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+
+    </nav>
+
+    <a class="acceso-carrito"
+        href="carrito.html"
+        aria-label="Ir al carrito de compras">
+
+        <span class="icono-carrito" aria-hidden="true">🛒</span>
+
+        <span id="cantidad-carrito" class="cantidad-carrito">
+            0
+        </span>
+
+    </a>
+
+</header>
+<main id="contenido-principal" class="pagina-carrito">
+
+    <section class="carrito-compras">
+
         <h1>Carrito de compras</h1>
 
-        <section id="lista-carrito">
+        <div class="encabezado-carrito">
+            <span>Producto</span>
+            <span>Precio</span>
+            <span>Cantidad</span>
+        </div>
 
+        <section id="lista-carrito">
         </section>
 
-        <button id="vaciar-carrito" type="button">
-            Vaciar carrito
-        </button>
-    </main>
+        <div class="acciones-pagina-carrito">
+
+            <button id="vaciar-carrito" type="button">
+                Vaciar carrito
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <aside class="resumen-carrito">
+
+        <h2>Totales</h2>
+
+        <div class="fila-resumen">
+            <span>Subtotal</span>
+            <strong id="subtotal-carrito">$0</strong>
+        </div>
+
+        <div class="fila-resumen total-resumen">
+            <span>Total</span>
+            <strong id="total-pagina-carrito">$0</strong>
+        </div>
+
+    </aside>
+
+</main>
 
     <footer class="pie-sitio">
 
