@@ -20,81 +20,115 @@ a:hover {
     color: #14b8a6;
 }
 
-.cabecera-sitio {
-    background-color: #0d212d;
-    border-bottom: 1px solid #1e3a4c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-}
+/* =========================================================
+   CARRUSEL INICIO
+   ========================================================= */
 
-.marca {
-    color: #2dd4bf;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.menu {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
-
-.menu a {
-    color: #ffffff;
-}
-
-.menu a:hover {
-    color: #2dd4bf;
-}
-
-
-
-
-.presentacion {
-
-    background-image:
-
-        linear-gradient(rgba(4, 16, 24, 0.55), rgba(4, 16, 24, 0.55)),
-
-        url("../img/portada.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-
+.carrusel {
+    position: relative;
+    width: 90%;
+    max-width: 75rem;
+    margin: 2.5rem auto 3.75rem;
+    overflow: hidden;
 
     border: 1px solid #1e3a4c;
+    border-radius: 0.625rem;
+}
 
-    border-radius: 10px;
+.diapositiva {
+    position: relative;
+    display: none;
+    height: 28.125rem;
+}
+
+.diapositiva.activa {
+    display: block;
+}
+
+.diapositiva img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Capa oscura sobre la imagen para que se lea el texto */
+
+.diapositiva::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(4, 16, 24, 0.55);
+    pointer-events: none;
+}
+
+/* Texto sobre la imagen */
+
+.contenido-diapositiva {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+
+    width: 90%;
+    max-width: 700px;
 
     text-align: center;
+}
 
-    padding: 80px 30px;
+.contenido-diapositiva h1,
+.contenido-diapositiva h2 {
+    margin-bottom: 1.25rem;
+    color: #ffffff;
+    font-size: 2.625rem;
+}
 
-    margin: 40px 0 60px;
+.contenido-diapositiva>p:not(.etiqueta) {
+    margin-bottom: 1.5625rem;
+    color: #ffffff;
+    font-size: 1.125rem;
+}
 
+/* Puntitos del carrusel */
+
+.indicadores-carrusel {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+
+    display: flex;
+    gap: 10px;
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+
+    padding: 0;
+
+    background-color: #ffffff;
+
+    border: 0;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.indicador.activo {
+    background-color: #2dd4bf;
 }
 
 .etiqueta {
     color: #2dd4bf;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.presentacion h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.presentacion p {
-    color: #94a3b8;
-    font-size: 18px;
-    margin-bottom: 25px;
 }
 
 .boton {
@@ -177,73 +211,10 @@ a:hover {
     margin-top: 0.6rem;
 }
 
-
-/* =========================================================
-   celular   PEQUEÑO
-   DESDE 368 PX
-   ========================================================= */
-
-@media (min-width: 368px) {
-
-    .presentacion {
-        padding: 70px 25px;
-    }
-
-    .presentacion h1 {
-        font-size: 36px;
-    }
-
-    .producto-detalle {
-        width: 94%;
-    }
-
-    .producto-detalle figure img {
-        height: 20rem;
-    }
-
-    .footer-contenido {
-        gap: 1.5rem;
-    }
-
-}
-
-/* Productos detalle  mobile*/
-
-
-@media (max-width: 37.5rem) {
-    .producto-detalle {
-        width: 95%;
-    }
-
-    .producto-detalle figure img {
-        height: 17.5rem;
-    }
-
-    .grilla-productos {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 .tarjeta-producto h2 {
     color: #ffffff;
     font-size: 1rem;
     margin-bottom: 0.5rem;
-}
-
-.tarjeta-producto p {
-    color: #2dd4bf;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.8rem;
-}
-
-.tarjeta-producto a {
-    display: inline-block;
-    color: #2dd4bf;
-    border: 1px solid #14b8a6;
-    padding: 0.5rem 0.8rem;
-    border-radius: 0.3rem;
 }
 
 .tarjeta-producto h3 {
@@ -328,64 +299,12 @@ a:hover {
     color: #94a3b8;
 }
 
-@media (max-width: 900px) {
-    .grilla-productos {
-        grid-template-columns: (1fr);
-    }
-
-    .tarjeta-producto {
-        padding: 0.75rem;
-    }
-
-    .tarjeta-producto img {
-        height: 8rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .tarjeta-producto h3 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-producto p {
-        font-size: 0.9rem;
-    }
-
-    .footer-contenido {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-}
-
-@media (max-width: 600px) {
-
-    .menu {
-        gap: 15px;
-    }
-
-    .presentacion {
-        padding: 60px 20px;
-    }
-
-    .presentacion h1 {
-        font-size: 32px;
-    }
-
-
-
-    .footer-contenido {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-}
 
 /* =========================================================
    SONIDO VIVO
    RESPONSIVE MOBILE FIRST
    SERVICIOS + HEADER + FOOTER
    ========================================================= */
-
 
 /* =========================================================
    1. HEADER - BASE MÓVIL
@@ -424,9 +343,7 @@ a:hover {
 .marca img {
 
     width: 12.5rem;
-
     height: auto;
-
     display: block;
 
 }
@@ -434,12 +351,9 @@ a:hover {
 .marca {
     display: inline-flex;
     align-items: center;
-
     color: #ffffff;
-
     font-size: 1.25rem;
     font-weight: bold;
-
     text-decoration: none;
 }
 
@@ -847,7 +761,7 @@ a:hover {
 
 
 /* =========================================================
-   CAMPOS COMPLETOS
+   CAMPOS COMPLETOS 
    ========================================================= */
 
 .campo-completo {
@@ -856,10 +770,10 @@ a:hover {
 
 
 /* =========================================================
-   368 PX
+   360 PX
    ========================================================= */
 
-@media (max-width: 368px) {
+@media (max-width: 360px) {
 
     .seccion-formulario {
         padding: 1rem;
@@ -888,8 +802,6 @@ a:hover {
    ========================================================= */
 
 @media (min-width: 768px) {
-
-
 
     .seccion-formulario {
         padding: 1.75rem;
@@ -932,17 +844,6 @@ a:hover {
     }
 
 }
-
-
-/* =========================================================
-   CAMPO QUE DEBE OCUPAR TODO EL ANCHO
-   ========================================================= */
-
-.campo-completo {
-    grid-column: 1 / -1;
-}
-
-
 
 /* =========================================================
    4. FOOTER - BASE MÓVIL
@@ -1025,7 +926,7 @@ a:hover {
    48rem × 16px = 768px
    ========================================================= */
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
 
     /* =====================
        HEADER TABLET
@@ -1120,27 +1021,12 @@ a:hover {
         gap: 1.25rem;
     }
 
-
-    /*
-       Descripción u otros campos
-       con campo-completo ocupan
-       las dos columnas.
-    */
-
-    .campo-completo {
-        grid-column: 1 / -1;
-    }
-
-
-
     /* Botón deja de ocupar
        todo el ancho */
 
     .formulario-servicio button[type="submit"] {
         width: fit-content;
     }
-
-
 
     /* =====================
        FOOTER TABLET
@@ -1158,107 +1044,162 @@ a:hover {
 /* =========================================================
    CARRITO
    ========================================================= */
+
 /* Página completa del carrito */
 
 .pagina-carrito {
+    width: 90%;
+    max-width: 75rem;
+
+    margin: 0 auto;
+    padding: 3rem 0;
+
     display: grid;
     gap: 2rem;
-    padding: 3rem 1.5rem;
 }
 
 .carrito-compras {
-    background-color: #0d212d;
-    color: #ffffff;
-    padding: 2rem;
-}
-
-.resumen-carrito {
-    background-color: #0d212d;
-    color: #ffffff;
-    padding: 2rem;
-}
-
-
-
-.encabezado-carrito {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem 0;
-    border-top: 1px solid #d1d5db;
-    border-bottom: 1px solid #d1d5db;
-    color: #0d212d;
-    font-weight: 700;
-}
-
-.resumen-carrito {
-    max-width: 28rem;
     width: 100%;
-    justify-self: end;
+
+    padding: 2rem;
+
+    background-color: #0d212d;
+    color: #ffffff;
+
+    border: 1px solid #1e3a4c;
+    border-radius: 0.6rem;
+}
+
+.carrito-compras h1 {
+    margin-bottom: 2rem;
+}
+
+
+/* Producto dentro de la página carrito */
+
+.pagina-carrito .tarjeta-carrito {
+    display: block;
+
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+
+    background-color: #163747;
+
+    border: 1px solid #2f667d;
+    border-radius: 0.6rem;
+}
+
+
+.pagina-carrito .informacion-producto-carrito {
+    display: grid;
+
+    grid-template-columns: 8rem 1fr;
+    grid-template-rows: auto auto;
+
+    gap: 0.5rem 1.5rem;
+
+    align-items: center;
+}
+
+
+.pagina-carrito .imagen-carrito {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    width: 8rem;
+    height: 8rem;
+
+    object-fit: contain;
+
+    background-color: #ffffff;
+}
+
+
+.pagina-carrito .informacion-producto-carrito p {
+    margin: 0;
     color: #ffffff;
 }
+
+
+.pagina-carrito .informacion-producto-carrito p:first-of-type {
+    grid-column: 2;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.pagina-carrito .informacion-producto-carrito p:last-child {
+    grid-column: 2;
+
+    color: #2dd4bf;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* Resumen */
+
+.resumen-carrito {
+    width: 100%;
+    max-width: none;
+
+    padding: 2rem;
+
+    background-color: #0d212d;
+    color: #ffffff;
+
+    border: 1px solid #1e3a4c;
+    border-radius: 0.6rem;
+}
+
+
+.resumen-carrito h2 {
+    margin-bottom: 1rem;
+}
+
 
 .fila-resumen {
     display: flex;
     justify-content: space-between;
+
     padding: 1rem 0;
 }
+
 
 .total-resumen {
     border-top: 1px solid #d1d5db;
     font-size: 1.2rem;
 }
 
-
-/* Productos del carrito */
-
-.imagen-carrito {
-    width: 7.5rem;
-    height: auto;
-}
-
-.imagen-carrito {
-    width: 7.5rem;
-    height: auto;
-}
-
-.tarjeta-carrito {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
-
-    padding: 1rem;
-    margin-bottom: 1rem;
-
-    background-color: #163747;
-
-
-    border: 1px solid #1e3a4c;
-    border-radius: 0.6rem;
-}
+/* Botón vaciar carrito */
 
 #vaciar-carrito {
-    padding: 0.75rem 1.25rem;
+    padding: 0.60rem 1.10rem;
+
     color: #ffffff;
     background-color: #14b8a6;
+
     border: 0;
     border-radius: 0.4rem;
+
     font: inherit;
     font-size: 1rem;
     font-weight: bold;
+
     cursor: pointer;
 }
 
 #vaciar-carrito:hover {
-    background-color: #020606;
+    background-color: #0f9f91;
 }
 
-.total-carrito {
-    text-align: right;
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+#vaciar-carrito:active {
+    transform: scale(0.96);
 }
 
 /* =========================================================
@@ -1267,7 +1208,7 @@ a:hover {
    80rem × 16px = 1280px
    ========================================================= */
 
-@media (min-width: 80rem) {
+@media (min-width: 1280px) {
 
     /* =====================
        HEADER ESCRITORIO
@@ -1373,7 +1314,7 @@ VIDEO SERVICIOS
     max-width: 90%;
     height: 100vh;
 
-background: #163747;
+    background: #163747;
     color: #ffffff;
 
     box-shadow: -4px 0 12px rgba(0, 0, 0, 0.25);
@@ -1452,6 +1393,23 @@ background: #163747;
     border-radius: 0.75rem;
 }
 
+.panel-carrito .informacion-producto-carrito {
+
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.panel-carrito .informacion-producto-carrito p {
+    margin: 0;
+}
+
+.panel-carrito .informacion-producto-carrito p:last-child {
+    white-space: nowrap;
+}
+
 /* Imagen */
 
 .panel-carrito .imagen-carrito {
@@ -1469,15 +1427,14 @@ background: #163747;
 
 .panel-carrito .tarjeta-carrito p {
     grid-column: 2;
-
     margin: 0;
-
     color: #ffffff;
 }
 
 .panel-carrito .tarjeta-carrito p:first-of-type {
     font-weight: 600;
     line-height: 1.3;
+    text-align: left;
 }
 
 
@@ -1485,15 +1442,16 @@ background: #163747;
 
 .panel-carrito .total-carrito {
     margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #2f667d;
 
-    color: #0d212d;
+    color: #ffffff;
 
     font-size: 1.25rem;
     font-weight: 700;
 
     text-align: center;
 }
-
 
 /* Mensaje cuando no hay productos */
 
@@ -1521,7 +1479,7 @@ background: #163747;
 #acciones-carrito {
     display: flex;
     gap: 1rem;
-    margin-top: 1.rem;
+    margin-top: 1rem;
 }
 
 #acciones-carrito button,
@@ -1594,4 +1552,176 @@ background: #163747;
     font-weight: bold;
 
     cursor: pointer;
+}
+
+.boton-agregar:hover {
+    background-color: #0f9f91;
+}
+
+.boton-agregar:active {
+    transform: scale(0.96);
+}
+
+/* =========================================================
+   RESPONSIVE - CELULAR
+   360 PX
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .producto-detalle {
+        width: 95%;
+    }
+
+    .producto-detalle figure img {
+        height: 17.5rem;
+    }
+
+    .grilla-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .panel-carrito {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    #acciones-carrito {
+        flex-direction: column;
+    }
+
+    #acciones-carrito button,
+    #acciones-carrito .boton {
+        width: 100%;
+    }
+
+    .pagina-carrito {
+        width: 94%;
+    }
+
+    .carrito-compras {
+        padding: 1.25rem;
+    }
+
+    .pagina-carrito .informacion-producto-carrito {
+        grid-template-columns: 5.5rem 1fr;
+        gap: 0.5rem 1rem;
+    }
+
+    .pagina-carrito .imagen-carrito {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .pagina-carrito .informacion-producto-carrito p:first-of-type {
+        font-size: 1rem;
+    }
+}
+
+/* =========================================================
+   CARRUSEL RESPONSIVE - CELULAR
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .carrusel {
+        width: 94%;
+        margin: 25px auto 40px;
+    }
+
+    .diapositiva {
+        height: 340px;
+    }
+
+    .contenido-diapositiva {
+        width: 88%;
+    }
+
+    .contenido-diapositiva h1,
+    .contenido-diapositiva h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .contenido-diapositiva>p:not(.etiqueta) {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .contenido-diapositiva .boton {
+        padding: 10px 18px;
+    }
+
+    .indicadores-carrusel {
+        bottom: 12px;
+    }
+}
+
+/* =========================================================
+   CARRUSEL RESPONSIVE - TABLET
+   768 PX
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+    .carrusel {
+        width: 90%;
+        margin: 35px auto 50px;
+    }
+
+    .diapositiva {
+        height: 400px;
+    }
+
+    .contenido-diapositiva {
+        width: 85%;
+        max-width: 650px;
+    }
+
+    .contenido-diapositiva h1,
+    .contenido-diapositiva h2 {
+        font-size: 2.3rem;
+    }
+
+    .contenido-diapositiva>p:not(.etiqueta) {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* =========================================================
+   CARRUSEL RESPONSIVE - ESCRITORIO
+   1280 PX
+   ========================================================= */
+
+@media (min-width: 1280px) {
+
+    .carrusel {
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto 60px;
+    }
+
+    .diapositiva {
+        height: 450px;
+    }
+
+    .contenido-diapositiva {
+        max-width: 700px;
+    }
+
+    .contenido-diapositiva h1,
+    .contenido-diapositiva h2 {
+        font-size: 42px;
+    }
+
+    .contenido-diapositiva>p:not(.etiqueta) {
+        font-size: 18px;
+    }
 }

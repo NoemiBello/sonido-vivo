@@ -33,7 +33,7 @@ const accionesCarrito = document.querySelector("#acciones-carrito");
 const botonVaciar = document.querySelector("#vaciar-carrito");
 const subtotalCarrito = document.querySelector("#subtotal-carrito");
 const totalPaginaCarrito = document.querySelector("#total-pagina-carrito");
-
+const totalCarritoPanel = document.querySelector("#total-carrito-panel");
 
 // =========================================================
 // MOSTRAR CARRITO
@@ -62,11 +62,11 @@ function mostrarCarrito() {
     }
 
 
-    // Limpiar el contenido anterior antes de volver a mostrarlo.
+    // Limpiar el contenido anterior.
     listaCarrito.replaceChildren();
 
 
-    // Mostrar mensaje cuando el carrito está vacío.
+    // Carrito vacío.
     if (carrito.length === 0) {
 
         if (accionesCarrito !== null) {
@@ -81,6 +81,7 @@ function mostrarCarrito() {
 
         listaCarrito.appendChild(mensajeVacio);
 
+
         if (subtotalCarrito !== null) {
             subtotalCarrito.textContent = "$0";
         }
@@ -89,11 +90,15 @@ function mostrarCarrito() {
             totalPaginaCarrito.textContent = "$0";
         }
 
+        if (totalCarritoPanel !== null) {
+            totalCarritoPanel.textContent = "Total: $0";
+        }
+
         return;
     }
 
 
-    // Si existen productos, se muestran las acciones del carrito.
+    // Si existen productos, mostrar acciones.
     if (accionesCarrito !== null) {
         accionesCarrito.style.display = "flex";
     }
@@ -102,7 +107,7 @@ function mostrarCarrito() {
     let total = 0;
 
 
-    // Crear una tarjeta HTML por cada producto del carrito.
+    // Crear una tarjeta por cada producto.
     for (const producto of carrito) {
 
         const tarjeta = document.createElement("article");
@@ -128,36 +133,27 @@ function mostrarCarrito() {
 
         nombre.textContent = producto.nombre;
 
+        const detalleCompra = document.createElement("p");
 
-        const precio = document.createElement("p");
-
-        precio.textContent =
-            "$" + producto.precio.toLocaleString("es-CL");
-
-
-        const cantidad = document.createElement("p");
-
-        cantidad.textContent =
-            producto.cantidad + " × $" +
+        detalleCompra.textContent =
+            producto.cantidad + " ×  $" +
             producto.precio.toLocaleString("es-CL");
 
 
-        // Calcular el total considerando precio y cantidad.
+        // Calcular total.
         total += producto.precio * producto.cantidad;
-
 
         informacionProducto.appendChild(imagen);
         informacionProducto.appendChild(nombre);
+        informacionProducto.appendChild(detalleCompra);
 
         tarjeta.appendChild(informacionProducto);
-        tarjeta.appendChild(precio);
-        tarjeta.appendChild(cantidad);
 
         listaCarrito.appendChild(tarjeta);
     }
 
 
-    // Mostrar subtotal y total en carrito.html.
+    // Totales de carrito.html.
     if (subtotalCarrito !== null) {
         subtotalCarrito.textContent =
             "$" + total.toLocaleString("es-CL");
@@ -167,8 +163,14 @@ function mostrarCarrito() {
         totalPaginaCarrito.textContent =
             "$" + total.toLocaleString("es-CL");
     }
-}
 
+
+    // Total del panel lateral.
+    if (totalCarritoPanel !== null) {
+        totalCarritoPanel.textContent =
+            "Total: $" + total.toLocaleString("es-CL");
+    }
+}
 
 // =========================================================
 // EVENTO: AGREGAR PRODUCTOS
@@ -236,13 +238,12 @@ botonesAgregar.forEach(function (boton) {
                 "carrito",
                 JSON.stringify(carrito)
             );
-
-
             // Actualizar lo que ve el usuario.
             mostrarCarrito();
 
             // Seguimiento del carrito desde la consola.
             console.log(carrito);
+
         }
 
     });
