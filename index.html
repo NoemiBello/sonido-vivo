@@ -55,6 +55,10 @@
         <div class="panel-carrito-contenido">
 
             <div id="lista-carrito"></div>
+            
+            <p id="total-carrito-panel" class="total-carrito">
+                Total: $0
+            </p>
 
             <div id="acciones-carrito">
 
@@ -73,13 +77,48 @@
     </aside>
 
     <main id="contenido-principal">
+        <section class="carrusel" aria-label="Presentación principal de Sonido Vivo">
 
-        <section class="presentacion">
-            <p class="etiqueta">Tecnología y sonido</p>
-            <h1>Encuentra el sonido que buscas</h1>
-            <p>Descubre productos de audio y servicios de reparación para tus equipos.</p>
-            <a class="boton" href="catalogo.html">Ver catálogo</a>
+            <article class="diapositiva activa">
+
+                <img src="assets/img/catalogo.png" alt="Equipos e instrumentos disponibles en Sonido Vivo">
+
+                <div class="contenido-diapositiva">
+                    <p class="etiqueta">Equipa tu sonido</p>
+                    <h1>Encuentra el equipo que necesitas</h1>
+                    <p>Guitarras, micrófonos y amplificadores para acompañar tu música.</p>
+                    <a class="boton" href="catalogo.html">Explorar productos</a>
+                </div>
+
+            </article>
+
+
+            <article class="diapositiva">
+
+                <img src="assets/img/servicio tecnico.png" alt="Servicio técnico y reparación de instrumentos">
+
+                <div class="contenido-diapositiva">
+                    <p class="etiqueta">Servicio técnico</p>
+                    <h2>Tu instrumento en buenas manos</h2>
+                    <p>Reparación y mantenimiento de instrumentos de cuerda.</p>
+                    <a class="boton" href="servicios.html">Solicitar revisión</a>
+                </div>
+
+            </article>
+
+
+            <div class="indicadores-carrusel" aria-label="Seleccionar diapositiva">
+
+                <button class="indicador activo" type="button" data-indice="0" aria-label="Mostrar catálogo">
+                </button>
+
+                <button class="indicador" type="button" data-indice="1" aria-label="Mostrar servicio técnico">
+                </button>
+
+            </div>
+
         </section>
+
         <section aria-labelledby="titulo-productos">
             <h2 id="titulo-productos">Productos destacados</h2>
 
@@ -120,18 +159,25 @@
         </section>
 
     </main>
-
     <footer class="pie-sitio">
 
         <div class="footer-contenido">
 
             <section class="footer-columna">
                 <h2>Sonido Vivo</h2>
-                <p>Productos de audio y soluciones para mantener tus equipos siempre sonando.</p>
+
+                <p>
+                    Productos de audio y soluciones para mantener tus equipos siempre sonando.
+                </p>
+
+                <p>Santiago, Chile</p>
+
+                <p>Lunes a viernes · 09:00 a 18:00 hrs.</p>
             </section>
 
             <section class="footer-columna">
                 <h2>Navegación</h2>
+
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
@@ -142,14 +188,20 @@
 
             <section class="footer-columna">
                 <h2>Servicios</h2>
+
                 <p>Venta de productos de audio.</p>
                 <p>Reparación de equipos.</p>
             </section>
 
             <section class="footer-columna">
                 <h2>Contacto</h2>
+
                 <address>
-                    <p>Teléfono: +56 9 5514 2432</p>
+                    <p>
+                        Teléfono:
+                        <a href="tel:+56955142432">+56 9 5514 2432</a>
+                    </p>
+
                     <p>
                         Email:
                         <a href="mailto:contacto@sonidovivo.cl">contacto@sonidovivo.cl</a>
@@ -158,16 +210,21 @@
             </section>
 
         </div>
+
         <div class="footer-inferior">
             <p>
-                <small>© 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II</small>
+                <small>
+                    © 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II
+                </small>
             </p>
         </div>
+
     </footer>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/productos.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/carrusel.js"></script>
 
 </body>
 
