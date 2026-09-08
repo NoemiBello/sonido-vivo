@@ -292,8 +292,161 @@ function validarCondiciones() {
 }
 
 
+// 4. VALIDACIÓN DURANTE LA INTERACCIÓN
 
-// 4. PROCESAR FORMULARIO
+// Nombre
+
+nombre.addEventListener(
+    "blur",
+    function () {
+
+        const valorNombre =
+            nombre.value.trim();
+
+        validarNombre(valorNombre);
+
+    }
+);
+
+
+nombre.addEventListener(
+    "input",
+    function () {
+
+        limpiarError(
+            nombre,
+            "error-nombre"
+        );
+
+        mensajeFormulario.textContent = "";
+
+    }
+);
+
+
+// Correo
+
+correo.addEventListener(
+    "blur",
+    function () {
+
+        const valorCorreo =
+            correo.value.trim().toLowerCase();
+
+        validarCorreo(valorCorreo);
+
+    }
+);
+
+
+correo.addEventListener(
+    "input",
+    function () {
+
+        limpiarError(
+            correo,
+            "error-correo"
+        );
+
+        mensajeFormulario.textContent = "";
+
+    }
+);
+
+
+// Teléfono
+
+telefono.addEventListener(
+    "blur",
+    function () {
+
+        const valorTelefono =
+            telefono.value.trim();
+
+        validarTelefono(valorTelefono);
+
+    }
+);
+
+
+telefono.addEventListener(
+    "input",
+    function () {
+
+        limpiarError(
+            telefono,
+            "error-telefono"
+        );
+
+        mensajeFormulario.textContent = "";
+
+    }
+);
+
+
+// Instrumento
+
+instrumento.addEventListener(
+    "change",
+    function () {
+
+        validarInstrumento(
+            instrumento.value
+        );
+
+        mensajeFormulario.textContent = "";
+
+    }
+);
+
+
+// Descripción
+
+descripcion.addEventListener(
+    "blur",
+    function () {
+
+        const valorDescripcion =
+            descripcion.value.trim();
+
+        validarDescripcion(
+            valorDescripcion
+        );
+
+    }
+);
+
+
+descripcion.addEventListener(
+    "input",
+    function () {
+
+        limpiarError(
+            descripcion,
+            "error-descripcion"
+        );
+
+        mensajeFormulario.textContent = "";
+
+    }
+);
+
+
+// Checkbox
+
+aceptaCondiciones.addEventListener(
+    "change",
+    function () {
+
+        validarCondiciones();
+
+        mensajeFormulario.textContent = "";
+
+    }
+);
+
+
+// 5. PROCESAR FORMULARIO
 
 
 function procesarSolicitud(evento) {
@@ -362,8 +515,7 @@ function procesarSolicitud(evento) {
 }
 
 
-
-// 5. EVENTO SUBMIT
+// 6. EVENTO SUBMIT
 
 
 if (formularioServicio) {
@@ -374,3 +526,4 @@ if (formularioServicio) {
     );
 
 }
+
