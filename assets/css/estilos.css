@@ -1336,6 +1336,30 @@ a:hover {
     }
 }
 
+/*
+VIDEO SERVICIOS
+*/
+
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.video-servicio {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 65vh;
+    margin-inline: auto;
+    border-radius: 0.5rem;
+    object-fit: contain;
+}
+
 /* =========================================================
    PANEL LATERAL DEL CARRITO
    ========================================================= */
