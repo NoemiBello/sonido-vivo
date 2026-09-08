@@ -1,8 +1,6 @@
 
 // FORMULARIO SERVICIO TÉCNICO
 
-
-
 // Selección del formulario
 const formularioServicio =
     document.querySelector("#formulario-servicio");
@@ -417,7 +415,11 @@ function procesarSolicitud(evento) {
 // EVENTO SUBMIT
 
 
-formularioServicio.addEventListener(
-    "submit",
-    procesarSolicitud
-);
+if (formularioServicio) {
+
+    formularioServicio.addEventListener(
+        "submit",
+        procesarSolicitud
+    );
+
+}
