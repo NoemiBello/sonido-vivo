@@ -19,7 +19,6 @@ if (carritoGuardado !== null) {
     carrito = JSON.parse(carritoGuardado);
 }
 
-
 // =========================================================
 // REFERENCIAS AL DOM
 // Se buscan los elementos HTML que serán utilizados
@@ -180,18 +179,12 @@ function mostrarCarrito() {
 botonesAgregar.forEach(function (boton) {
 
     boton.addEventListener("click", function () {
-
         // data-id viene desde el botón HTML.
         const idProducto = Number(boton.dataset.id);
-
         let productoSeleccionado = null;
-
-
         // Buscar el producto correspondiente al ID.
         for (const producto of productos) {
-
             if (producto.id === idProducto) {
-
                 productoSeleccionado = producto;
 
             }
@@ -216,7 +209,7 @@ botonesAgregar.forEach(function (boton) {
             // Si ya existe aumenta su cantidad.
             // Si no existe, se agrega al arreglo.
             if (productoEnCarrito !== null) {
-
+                
                 productoEnCarrito.cantidad++;
 
             } else {
