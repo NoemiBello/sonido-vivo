@@ -207,8 +207,15 @@ a:hover {
 #titulo-productos {
     color: #ffffff;
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 35px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#titulo-catalogo {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.1rem;
 }
 
 /* Grilla */
@@ -308,6 +315,7 @@ a:hover {
     margin: 2.5rem auto;
 }
 
+
 /* Figura */
 .producto-detalle figure {
     width: 100%;
@@ -330,7 +338,39 @@ a:hover {
     margin-top: 0.6rem;
 }
 
+/* Espaciado del contenido del detalle del producto */
+.producto-detalle h1 {
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
 
+.producto-detalle h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.producto-detalle h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+.producto-detalle p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+}
+
+.producto-detalle ul {
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.producto-detalle li {
+    margin-bottom: 0.6rem;
+    line-height: 1.7;
+}
 /* =========================================================
    6. PÁGINA DE SERVICIOS
    ========================================================= */
@@ -351,7 +391,7 @@ a:hover {
 .encabezado-pagina .etiqueta {
     margin-bottom: 0.5rem;
     color: #2dd4bf;
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
