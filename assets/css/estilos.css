@@ -1,7 +1,7 @@
 
-/* =========================================================
+/*
    1. CONFIGURACIÓN GENERAL
-   ========================================================= */
+   */
 
 /* Reinicio de estilos */
 * {
@@ -28,9 +28,9 @@ a:hover {
     color: #14b8a6;
 }
 
-/* =========================================================
+/*
    CARRUSEL INICIO
-   ========================================================= */
+   */
 
 .carrusel {
     position: relative;
@@ -158,9 +158,9 @@ a:hover {
 }
 
 
-/* =========================================================
+/*
    4. CATÁLOGO DE PRODUCTOS
-   ========================================================= */
+   */
 
 /* Título de productos */
 #titulo-productos {
@@ -335,13 +335,13 @@ a:hover {
 }
 
 
-/* =========================================================
+/*
    5. DETALLE DEL PRODUCTO
-   ========================================================= */
+   */
 
-/* =========================================================
+/*
    1. HEADER - BASE MÓVIL
-   ========================================================= */
+   */
 
 .cabecera-sitio {
     display: grid;
@@ -505,9 +505,9 @@ a:hover {
     margin-bottom: 0.6rem;
     line-height: 1.7;
 }
-/* =========================================================
+/*
    6. PÁGINA DE SERVICIOS
-   ========================================================= */
+   */
 
 /* Contenedor general */
 .pagina-servicios {
@@ -587,9 +587,9 @@ a:hover {
 }
 
 
-/* =========================================================
+/*
    7. FORMULARIO DE SERVICIO
-   ========================================================= */
+   */
 
 /* Formulario */
 .formulario-servicio {
@@ -717,18 +717,18 @@ a:hover {
 }
 
 
-/* =========================================================
+/*
    CAMPOS COMPLETOS 
-   ========================================================= */
+   */
 
 .campo-completo {
     grid-column: 1 / -1;
 }
 
 
-/* =========================================================
+/*
    360 PX
-   ========================================================= */
+   */
 
 @media (max-width: 360px) {
 
@@ -754,9 +754,9 @@ a:hover {
 }
 
 
-/* =========================================================
+/*
    768 PX - TABLET
-   ========================================================= */
+   */
 
 @media (min-width: 768px) {
 
@@ -777,9 +777,9 @@ a:hover {
 }
 
 
-/* =========================================================
+/*
    1280 PX - ESCRITORIO
-   ========================================================= */
+   */
 
 @media (min-width: 1280px) {
 
@@ -802,9 +802,9 @@ a:hover {
 
 }
 
-/* =========================================================
+/*
    4. FOOTER - BASE MÓVIL
-   ========================================================= */
+   */
 
 .pie-sitio {
     width: 100%;
@@ -869,9 +869,9 @@ a:hover {
 }
 
 
-/* =========================================================
+/*
    9. VIDEO DE SERVICIOS
-   ========================================================= */
+   */
 
 @media (min-width: 768px) {
 
@@ -988,9 +988,9 @@ a:hover {
 
 }
 
-/* =========================================================
+/*
    10. CARRITO - PÁGINA COMPLETA
-   ========================================================= */
+   */
 
 /* Página completa del carrito */
 
@@ -1151,11 +1151,11 @@ a:hover {
     transform: scale(0.96);
 }
 
-/* =========================================================
+/*
    ESCRITORIO
    DESDE 1280 PX
    80rem × 16px = 1280px
-   ========================================================= */
+   */
 
 @media (min-width: 1280px) {
 
@@ -1250,9 +1250,9 @@ VIDEO SERVICIOS
     object-fit: contain;
 }
 
-/* =========================================================
+/*
    11. PANEL LATERAL DEL CARRITO
-   ========================================================= */
+   */
 
 /* Panel */
 .panel-carrito {
@@ -1403,9 +1403,9 @@ VIDEO SERVICIOS
 }
 
 
-/* =========================================================
+/*
    12. ICONO Y CONTADOR DEL CARRITO
-   ========================================================= */
+   */
 
 /* Botón del carrito */
 .acceso-carrito {
@@ -1447,10 +1447,10 @@ VIDEO SERVICIOS
 .boton-agregar {
     padding: 0.50rem 1.05rem;
 
-    color: #2dd4bf;
-    background-color: transparent;
+    color: #ffffff;
+    background-color: #14b8a6;
 
-    border: 1px solid #14b8a6;
+    border: 0;
     border-radius: 0.4rem;
 
     font: inherit;
@@ -1461,18 +1461,17 @@ VIDEO SERVICIOS
 }
 
 .boton-agregar:hover {
-    background-color: #14b8a6;
-    color: #ffffff;
+    background-color: #0f9f91;
 }
 
 .boton-agregar:active {
     transform: scale(0.96);
 }
 
-/* =========================================================
+/*
    RESPONSIVE - CELULAR
    360 PX
-   ========================================================= */
+   */
 
 @media (max-width: 360px) {
 
@@ -1530,9 +1529,9 @@ VIDEO SERVICIOS
     }
 }
 
-/* =========================================================
+/*
    CATÁLOGO RESPONSIVE - CELULAR
-   ========================================================= */
+   */
 
 @media (max-width: 767px) {
     .grilla-productos {
@@ -1546,9 +1545,9 @@ VIDEO SERVICIOS
     }
 }
 
-/* =========================================================
+/*
    CARRUSEL RESPONSIVE - CELULAR
-   ========================================================= */
+   */
 
 @media (max-width: 360px) {
 
@@ -1644,9 +1643,9 @@ VIDEO SERVICIOS
     }
 }
 
-/* =========================================================
+/*
    PANEL DEL VENDEDOR
-   ========================================================= */
+   */
 
 .panel-vendedor {
     width: 90%;
@@ -1677,9 +1676,9 @@ VIDEO SERVICIOS
 }
 
 
-/* =========================================================
+/*
    ACCIONES DEL VENDEDOR
-   ========================================================= */
+   */
 
 .acciones-vendedor {
     width: 90%;
@@ -1701,9 +1700,9 @@ VIDEO SERVICIOS
 }
 
 
-/* =========================================================
+/*
    LISTA DE PRODUCTOS
-   ========================================================= */
+   */
 
 #listaProductos {
     width: 90%;
@@ -1759,11 +1758,11 @@ VIDEO SERVICIOS
 }
 
 
-/* =========================================================
+/*
    ENCABEZADO DEL VENDEDOR
-   ========================================================= */
+   */
 
-.encabezado-pagina {
+.pagina-vendedor .encabezado-pagina {
     width: 90%;
     max-width: 1200px;
     margin: 45px auto 25px;
@@ -1771,9 +1770,9 @@ VIDEO SERVICIOS
 }
 
 
-/* =========================================================
+/*
    BOTÓN CERRAR SESIÓN
-   ========================================================= */
+   */
 
 header nav button {
     padding: 10px 18px;
@@ -1784,9 +1783,9 @@ header nav button {
 }
 
 
-/* =========================================================
+/*
    FORMULARIO
-   ========================================================= */
+   */
 
 .contenedor-formulario {
     width: 90%;
@@ -1824,29 +1823,29 @@ header nav button {
 }
 
 
-/* =========================================================
+/*
    SECCIÓN DEL FORMULARIO / LOGIN
-   ========================================================= */
+   */
 
-.seccion-formulario {
+.pagina-login .seccion-formulario {
     width: 90%;
     max-width: 500px;
     margin: 50px auto;
 }
 
-.seccion-formulario form {
+.pagina-login .seccion-formulario form {
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
 }
 
-.campo-formulario {
+.pagina-login .campo-formulario {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.campo-formulario input,
-.campo-formulario select {
+.pagina-login .campo-formulario input,
+.pagina-login .campo-formulario select {
     width: 100%;
     max-width: 450px;
     padding: 12px 14px;
@@ -1854,15 +1853,14 @@ header nav button {
     border-radius: 8px;
 }
 
-.campo-formulario label {
+.pagina-login .campo-formulario label {
     display: block;
     margin-bottom: 7px;
 }
 
-
-/* =========================================================
+/*
    RESUMEN DEL STOCK
-   ========================================================= */
+   */
 
 
 .stock-producto {
@@ -1911,9 +1909,9 @@ header nav button {
 }
 
 
-/* =========================================================
+/*
    TABLA DE PRODUCTOS
-   ========================================================= */
+   */
 
 .tabla-productos {
     width: 90%;
@@ -1995,9 +1993,9 @@ header nav button {
 }
 
 
-/* =========================================================
+/*
    DATOS DE LA TABLA
-   ========================================================= */
+   */
 
 .etiqueta-dato {
     display: block;
@@ -2011,9 +2009,9 @@ header nav button {
 }
 
 
-/* =========================================================
+/*
    CUERPO Y MAIN
-   ========================================================= */
+   */
 
 body {
     width: 100%;
@@ -2028,18 +2026,18 @@ main {
 
 .cabecera-sitio {
     width: 100%;
-    max-width: none;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
-/* =========================================================
+/*
    TABLET / NOTEBOOK
-   ========================================================= */
+   */
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-    .encabezado-pagina,
+    .pagina-vendedor .encabezado-pagina,
     .acciones-vendedor,
     .resumen-stock,
     .tabla-productos,
@@ -2068,9 +2066,9 @@ main {
     }
 
 
-    /* =====================================================
+    /* 
        TABLA RESPONSIVE
-       ===================================================== */
+        */
 
     .tabla-responsive {
         width: 100%;
@@ -2170,9 +2168,9 @@ main {
         font-size: 0.85rem;
     }
 }
-/* =========================================================
+/*
    CELULAR
-   ========================================================= */
+   */
 
 @media (max-width: 767px) {
 
@@ -2360,13 +2358,13 @@ main {
 }
 
 
-/* =========================================================
+/*
    CELULARES PEQUEÑOS
-   ========================================================= */
+   */
 
 @media (max-width: 400px) {
 
-    .encabezado-pagina,
+    .pagina-vendedor .encabezado-pagina,
     .acciones-vendedor,
     .resumen-stock,
     .tabla-productos,
@@ -2375,7 +2373,7 @@ main {
         width: 94%;
     }
 
-    .encabezado-pagina h1 {
+    .pagina-vendedor .encabezado-pagina h1 {
         font-size: 1.5rem;
     }
 
@@ -2397,9 +2395,9 @@ main {
 }
 
 
-/* =========================================================
+/*
    AJUSTES FINALES DE LA TABLA EN CELULAR
-   ========================================================= */
+   */
 
 @media (max-width: 767px) {
 
