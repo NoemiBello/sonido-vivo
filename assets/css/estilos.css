@@ -1445,23 +1445,22 @@ VIDEO SERVICIOS
 /* Botón agregar producto */
 
 .boton-agregar {
-    padding: 0.50rem 1.05rem;
-
-    color: #ffffff;
-    background-color: #14b8a6;
-
-    border: 0;
+    padding: 0.5rem 1rem;
+    color: #2dd4bf;
+    background-color: transparent;
+    border: 1px solid #14b8a6;
     border-radius: 0.4rem;
-
     font: inherit;
     font-size: 1rem;
     font-weight: bold;
-
     cursor: pointer;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
 }
 
 .boton-agregar:hover {
-    background-color: #0f9f91;
+    background-color: #14b8a6;
+    color: #ffffff;
 }
 
 .boton-agregar:active {
@@ -2026,8 +2025,8 @@ main {
 
 .cabecera-sitio {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
     box-sizing: border-box;
 }
 
