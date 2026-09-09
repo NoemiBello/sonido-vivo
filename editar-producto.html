@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Editar producto - Sonido Vivo</title>
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <section class="contenedor-formulario">
+
+            <h1>Editar producto</h1>
+
+            <form id="formEditarProducto">
+
+                <label for="codigo">
+                    Código
+                </label>
+
+                <input
+                    type="text"
+                    id="codigo"
+                    required
+                    minlength="3"
+                >
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    required
+                    maxlength="100"
+                >
+
+                <label for="descripcion">
+                    Descripción
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    maxlength="500"
+                ></textarea>
+
+                <label for="precio">
+                    Precio
+                </label>
+
+                <input
+                    type="number"
+                    id="precio"
+                    min="0"
+                    step="0.01"
+                    required
+                >
+
+                <label for="stock">
+                    Stock
+                </label>
+
+                <input
+                    type="number"
+                    id="stock"
+                    min="0"
+                    required
+                >
+
+                <label for="stockCritico">
+                    Stock crítico
+                </label>
+
+                <input
+                    type="number"
+                    id="stockCritico"
+                    min="0"
+                >
+
+                <label for="categoria">
+                    Categoría
+                </label>
+
+                <select id="categoria" required>
+
+                    <option value="">
+                        Seleccione una categoría
+                    </option>
+
+                    <option value="Guitarras">
+                        Guitarras
+                    </option>
+
+                    <option value="Micrófonos">
+                        Micrófonos
+                    </option>
+
+                    <option value="Amplificadores">
+                        Amplificadores
+                    </option>
+
+                    <option value="Accesorios">
+                        Accesorios
+                    </option>
+
+                </select>
+
+                <label for="imagen">
+                    Imagen
+                </label>
+
+                <input
+                    type="text"
+                    id="imagen"
+                >
+
+                <p id="mensajeEditar"></p>
+
+                <button type="submit">
+                    Guardar cambios
+                </button>
+
+                <a href="vendedor.html">
+                    Volver al panel
+                </a>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="assets/js/vendedor.js"></script>
+
+</body>
+
+</html>

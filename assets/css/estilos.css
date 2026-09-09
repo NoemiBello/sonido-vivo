@@ -1585,10 +1585,7 @@ VIDEO SERVICIOS
     }
 }
 
-/* =========================================================
-   CARRUSEL RESPONSIVE - TABLET
-   768 PX
-   ========================================================= */
+/* CARRUSEL RESPONSIVE - TABLET 768 PX  */
 
 @media (min-width: 768px) {
 
@@ -1617,10 +1614,8 @@ VIDEO SERVICIOS
 
 }
 
-/* =========================================================
-   CARRUSEL RESPONSIVE - ESCRITORIO
-   1280 PX
-   ========================================================= */
+/* CARRUSEL RESPONSIVE - ESCRITORIO
+   1280 PX */
 
 @media (min-width: 1280px) {
 
@@ -1645,5 +1640,786 @@ VIDEO SERVICIOS
 
     .contenido-diapositiva>p:not(.etiqueta) {
         font-size: 18px;
+    }
+}
+
+/* =========================================================
+   PANEL DEL VENDEDOR
+   ========================================================= */
+
+.panel-vendedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-resumen {
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.tarjeta-resumen h3 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+}
+
+.tarjeta-resumen p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   ACCIONES DEL VENDEDOR
+   ========================================================= */
+
+.acciones-vendedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.acciones-vendedor a,
+.acciones-vendedor .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.acciones-vendedor h2 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   LISTA DE PRODUCTOS
+   ========================================================= */
+
+#listaProductos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.producto-vendedor {
+    width: 100%;
+    padding: 22px;
+    margin: 15px 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+}
+
+.producto-vendedor h3 {
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+}
+
+.producto-vendedor p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.producto-vendedor img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto-vendedor button {
+    margin-top: 15px;
+    margin-right: 8px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.stock-alerta {
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   ENCABEZADO DEL VENDEDOR
+   ========================================================= */
+
+.encabezado-pagina {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto 25px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOTÓN CERRAR SESIÓN
+   ========================================================= */
+
+header nav button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   FORMULARIO
+   ========================================================= */
+
+.contenedor-formulario {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.contenedor-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor-formulario input,
+.contenedor-formulario textarea,
+.contenedor-formulario select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.contenedor-formulario button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contenedor-formulario a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   SECCIÓN DEL FORMULARIO / LOGIN
+   ========================================================= */
+
+.seccion-formulario {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.seccion-formulario form {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.campo-formulario {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.campo-formulario input,
+.campo-formulario select {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   RESUMEN DEL STOCK
+   ========================================================= */
+
+
+.stock-producto {
+    display: block;
+    width: fit-content;
+    margin: 12px 0 14px;
+    padding: 0.50rem 0;
+    color: #ffffff;
+    background-color: #041018;
+    border: 0;
+    border-radius: 0.4rem;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+   
+.resumen-stock {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+.card-resumen {
+    width: 100%;
+    padding: 25px;
+    background: #248b7c;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+}
+
+.card-resumen h3 {
+    margin: 0 0 10px;
+}
+
+.card-resumen p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   TABLA DE PRODUCTOS
+   ========================================================= */
+
+.tabla-productos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 60px;
+    box-sizing: border-box;
+}
+
+.tabla-productos h2 {
+    margin-bottom: 20px;
+}
+
+.tabla-responsive {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+}
+
+.tabla-productos table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+    padding: 16px;
+    text-align: left;
+}
+
+.tabla-productos th {
+    font-weight: bold;
+}
+
+.tabla-productos td {
+    border-top: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+.tabla-productos tbody {
+    color: #111111;
+}
+
+.tabla-productos tbody tr {
+    width: 100%;
+    transition: background 0.2s ease;
+}
+
+.tabla-productos tbody tr:hover {
+    background: #f8fafc;
+}
+
+.tabla-productos tbody td {
+    background: #ffffff;
+    color: #111111;
+}
+
+.tabla-productos td strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #111111;
+}
+
+.tabla-productos td small {
+    font-size: 0.85rem;
+    color: #555555;
+}
+
+.tabla-productos button {
+    padding: 8px 14px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   DATOS DE LA TABLA
+   ========================================================= */
+
+.etiqueta-dato {
+    display: block;
+    font-weight: bold;
+}
+
+.valor-dato {
+    display: block;
+    font-weight: normal;
+    text-align: right;
+}
+
+
+/* =========================================================
+   CUERPO Y MAIN
+   ========================================================= */
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.cabecera-sitio {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLET / NOTEBOOK
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .encabezado-pagina,
+    .acciones-vendedor,
+    .resumen-stock,
+    .tabla-productos,
+    #listaProductos,
+    .panel-vendedor {
+        width: 92%;
+    }
+
+    .panel-vendedor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #listaProductos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .resumen-stock {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card-resumen {
+        padding: 20px;
+    }
+
+
+    /* =====================================================
+       TABLA RESPONSIVE
+       ===================================================== */
+
+    .tabla-responsive {
+        width: 100%;
+        overflow: visible;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .tabla-productos table {
+        width: 100%;
+        min-width: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .tabla-productos thead {
+        display: none;
+    }
+
+    .tabla-productos tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-productos tbody tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 18px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        box-sizing: border-box;
+    }
+
+    .tabla-productos tbody td {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+        border: none;
+        background: transparent;
+        color: #111111;
+        font-size: 0.9rem;
+        box-sizing: border-box;
+    }
+
+    .tabla-productos tbody td.producto-nombre {
+        display: block;
+        padding-bottom: 14px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .tabla-productos tbody td.producto-nombre strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #111111;
+        font-size: 1rem;
+    }
+
+    .tabla-productos tbody td.producto-nombre small {
+        display: block;
+        color: #777777;
+        font-size: 0.8rem;
+    }
+
+    .etiqueta-dato {
+        display: block;
+        color: #111111;
+        font-weight: bold;
+    }
+
+    .valor-dato {
+        display: block;
+        color: #111111;
+        font-weight: normal;
+        text-align: right;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .acciones-producto {
+        justify-content: flex-start !important;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-top: 15px !important;
+        margin-top: 5px;
+        border-top: 1px solid #e5e7eb !important;
+    }
+
+    .tabla-productos button {
+        margin: 0;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .cabecera-sitio {
+        width: 100%;
+    }
+
+    .encabezado-pagina {
+        width: 92%;
+        margin: 30px auto 20px;
+    }
+
+    .encabezado-pagina h1 {
+        font-size: 1.7rem;
+    }
+
+    .encabezado-pagina p {
+        font-size: 0.9rem;
+    }
+
+    .acciones-vendedor {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    .acciones-vendedor .btn,
+    .acciones-vendedor a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .panel-vendedor {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .resumen-stock {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 25px auto;
+    }
+
+    .card-resumen {
+        padding: 20px;
+    }
+
+    .card-resumen h3 {
+        font-size: 1rem;
+    }
+
+    .card-resumen p {
+        font-size: 1.8rem;
+    }
+
+    #listaProductos {
+        width: 92%;
+        grid-template-columns: 1fr;
+    }
+
+    .producto-vendedor {
+        padding: 16px;
+    }
+
+    .tabla-productos {
+        width: 92%;
+        margin: 30px auto 40px;
+    }
+
+    .tabla-productos h2 {
+        font-size: 1.4rem;
+    }
+
+
+    /* -----------------------------------------------------
+       TABLA EN FORMATO TARJETA
+       ----------------------------------------------------- */
+
+    .tabla-responsive {
+        width: 100%;
+        overflow: visible;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .tabla-productos table {
+        width: 100%;
+        min-width: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .tabla-productos thead {
+        display: none;
+    }
+
+    .tabla-productos tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-productos tbody tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 18px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        box-sizing: border-box;
+    }
+
+    .tabla-productos tbody td {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        padding: 11px 0;
+        border: none;
+        background: transparent;
+        color: #111111 !important;
+        font-size: 0.9rem;
+        box-sizing: border-box;
+    }
+
+
+    /* Nombre del producto */
+
+    .tabla-productos tbody td.producto-nombre {
+        display: block;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .tabla-productos tbody td.producto-nombre strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #111111 !important;
+        font-size: 0.95rem;
+    }
+
+    .tabla-productos tbody td.producto-nombre small {
+        display: block;
+        color: #777777 !important;
+        font-size: 0.8rem;
+    }
+
+
+    /* Etiquetas y valores */
+
+    .etiqueta-dato {
+        display: block !important;
+        color: #111111 !important;
+        font-weight: bold !important;
+    }
+
+    .valor-dato {
+        display: block !important;
+        color: #111111 !important;
+        font-weight: normal !important;
+        text-align: right;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+
+    /* Acciones */
+
+    .acciones-producto {
+        justify-content: flex-start !important;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-top: 15px !important;
+        margin-top: 5px;
+        border-top: 1px solid #e5e7eb !important;
+    }
+
+    .tabla-productos button {
+        margin: 0;
+        padding: 9px 14px;
+    }
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .encabezado-pagina,
+    .acciones-vendedor,
+    .resumen-stock,
+    .tabla-productos,
+    #listaProductos,
+    .panel-vendedor {
+        width: 94%;
+    }
+
+    .encabezado-pagina h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-resumen {
+        padding: 16px;
+    }
+
+    .tabla-productos tbody tr {
+        padding: 15px;
+    }
+
+    .tabla-productos tbody td {
+        font-size: 0.9rem;
+    }
+
+    .tabla-productos button {
+        flex: 1;
+    }
+}
+
+
+/* =========================================================
+   AJUSTES FINALES DE LA TABLA EN CELULAR
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .tabla-productos tbody td:nth-child(2)::before,
+    .tabla-productos tbody td:nth-child(3)::before,
+    .tabla-productos tbody td:nth-child(4)::before {
+        content: none !important;
+        display: none !important;
+    }
+
+    .tabla-productos .etiqueta-dato {
+        display: block !important;
+        color: #111111 !important;
+        font-weight: bold !important;
+    }
+
+    .tabla-productos .valor-dato {
+        display: block !important;
+        color: #111111 !important;
+        font-weight: normal !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 }

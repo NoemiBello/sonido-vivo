@@ -42,3 +42,18 @@ const productos = [
             "15W, distorsión incorporada, entrada auxiliar."
     },
 ];
+
+
+const stockProducto = document.getElementById("stock-producto");
+const contenidoPrincipal = document.getElementById("contenido-principal");
+
+if (stockProducto && contenidoPrincipal) {
+
+    const idProducto = Number(contenidoPrincipal.dataset.productoId);
+
+    const producto = productos.find(p => p.id === idProducto);
+
+    if (producto) {
+        stockProducto.textContent = `Stock: ${producto.stock} unidades`;
+    }
+}

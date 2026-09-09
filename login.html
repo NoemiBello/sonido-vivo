@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión - Sonido Vivo</title>
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <header class="cabecera-sitio">
+
+        <div class="marca">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo Sonido Vivo">
+            </a>
+        </div>
+
+        <button
+            class="boton-menu"
+            type="button"
+            aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <nav class="navegacion-principal">
+
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="catalogo.html">Productos</a>
+                </li>
+
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Iniciar sesión</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="seccion-formulario">
+
+            <div class="encabezado-pagina">
+
+                <span class="etiqueta">
+                    SONIDO VIVO
+                </span>
+
+                <h1>
+                    Iniciar sesión
+                </h1>
+
+                <p>
+                    Ingresa a tu cuenta para acceder a las funciones
+                    correspondientes a tu tipo de usuario.
+                </p>
+
+            </div>
+
+            <form
+                id="formulario-login"
+                novalidate>
+
+                <div class="campo-formulario">
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        maxlength="100"
+                        placeholder="ejemplo@gmail.com"
+                        required>
+
+                    <small
+                        id="error-correo"
+                        class="mensaje-error">
+                    </small>
+
+                </div>
+
+                <div class="campo-formulario">
+
+                    <label for="password">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        minlength="4"
+                        maxlength="10"
+                        placeholder="Ingresa tu contraseña"
+                        required>
+
+                    <small
+                        id="error-password"
+                        class="mensaje-error">
+                    </small>
+
+                </div>
+
+                <div class="campo-formulario">
+
+                    <label for="tipoUsuario">
+                        ¿Cómo quieres ingresar?
+                    </label>
+
+                    <select
+                        id="tipoUsuario"
+                        name="tipoUsuario"
+                        required>
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option value="usuario">
+                            Usuario / Cliente
+                        </option>
+
+                        <option value="vendedor">
+                            Vendedor
+                        </option>
+
+                    </select>
+
+                    <small
+                        id="error-tipo"
+                        class="mensaje-error">
+                    </small>
+
+                </div>
+
+                <p
+                    id="mensaje-login"
+                    class="mensaje-error">
+                </p>
+
+                <button
+                    type="submit"
+                    class="boton">
+                    Ingresar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-sitio">
+
+        <div class="footer-contenido">
+
+            <section class="footer-columna">
+
+                <h2>
+                    Sonido Vivo
+                </h2>
+
+                <p>
+                    Instrumentos musicales, equipos de sonido
+                    y accesorios para músicos.
+                </p>
+
+                <p>
+                    Viña del Mar, Región de Valparaíso
+                </p>
+
+                <p>
+                    Lunes a viernes · 09:00 a 18:00 hrs.
+                </p>
+
+            </section>
+
+            <section class="footer-columna">
+
+                <h2>
+                    Navegación
+                </h2>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogo.html">
+                            Catálogo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="carrito.html">
+                            Carrito
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="footer-columna">
+
+                <h3>
+                    Servicios
+                </h3>
+
+                <p>
+                    Venta de instrumentos musicales
+                    y equipos de sonido.
+                </p>
+
+                <p>
+                    Reparación de instrumentos de cuerda.
+                </p>
+
+            </section>
+
+            <section class="footer-columna">
+
+                <h3>
+                    Contacto
+                </h3>
+
+                <address>
+
+                    <p>
+                        Teléfono:
+                        <a href="tel:+56955142432">
+                            +56 9 5514 2432
+                        </a>
+                    </p>
+
+                    <p>
+                        Email:
+                        <a href="mailto:contacto@sonidovivo.cl">
+                            contacto@sonidovivo.cl
+                        </a>
+                    </p>
+
+                </address>
+
+            </section>
+
+        </div>
+
+        <div class="footer-inferior">
+
+            <p>
+
+                <small>
+                    © 2026 Sonido Vivo · Proyecto académico Desarrollo FullStack II
+                </small>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/login.js"></script>
+
+</body>
+
+</html>
+
