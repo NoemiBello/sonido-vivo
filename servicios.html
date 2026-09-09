@@ -149,12 +149,25 @@
                     <legend>Datos de contacto</legend>
 
                     <div class="campo-formulario">
-                        <label for="nombre">Nombre completo</label>
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
 
-                        <input id="nombre" name="nombre" type="text" maxlength="50" autocomplete="name"
+                        <input
+                            id="nombre"
+                            name="nombre"
+                            type="text"
+                            minlength="3"
+                            maxlength="50"
+                            autocomplete="name"
+                            required
                             aria-describedby="error-nombre">
 
-                        <small id="error-nombre" class="mensaje-error"></small>
+                        <small
+                            id="error-nombre"
+                            class="mensaje-error">
+                        </small>
+
                     </div>
 
                     <div class="campo-formulario">
@@ -169,10 +182,19 @@
                     <div class="campo-formulario">
                         <label for="telefono">Teléfono</label>
 
-                        <input id="telefono" name="telefono" type="tel" maxlength="9" autocomplete="tel"
-                            placeholder="912345678" aria-describedby="error-telefono">
+                        <input
+                            id="telefono"
+                            name="telefono"
+                            type="tel"
+                            maxlength="9"
+                            pattern="[0-9]{9}"
+                            autocomplete="tel"
+                            placeholder="912345678"
+                            required
+                            aria-describedby="error-telefono">
 
                         <small id="error-telefono" class="mensaje-error"></small>
+
                     </div>
 
                 </fieldset>
@@ -185,7 +207,11 @@
                     <div class="campo-formulario">
                         <label for="instrumento">Tipo de instrumento</label>
 
-                        <select id="instrumento" name="instrumento" aria-describedby="error-instrumento">
+                        <select
+                            id="instrumento"
+                            name="instrumento"
+                            required
+                            aria-describedby="error-instrumento">
 
                             <option value="">Selecciona un instrumento</option>
                             <option value="guitarra-electrica">Guitarra eléctrica</option>
@@ -201,9 +227,16 @@
                     <div class="campo-formulario">
                         <label for="descripcion">Descripción del problema</label>
 
-                        <textarea id="descripcion" name="descripcion" rows="5" maxlength="500"
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            rows="5"
+                            minlength="20"
+                            maxlength="500"
+                            required
                             aria-describedby="error-descripcion"
-                            placeholder="Describe brevemente qué problema presenta el instrumento"></textarea>
+                            placeholder="Describe brevemente qué problema presenta el instrumento">
+                        </textarea>
 
                         <small id="error-descripcion" class="mensaje-error"></small>
                     </div>
@@ -211,7 +244,11 @@
                 </fieldset>
 
                 <label class="aceptacion">
-                    <input id="acepta-condiciones" name="aceptaCondiciones" type="checkbox"
+                    <input
+                        id="acepta-condiciones"
+                        name="aceptaCondiciones"
+                        type="checkbox"
+                        required
                         aria-describedby="error-condiciones">
 
                     Confirmo que los datos ingresados son ficticios
@@ -239,10 +276,10 @@
                 <h2>Sonido Vivo</h2>
 
                 <p>
-                    Productos de audio y soluciones para mantener tus equipos siempre sonando.
+                    Instrumentos musicales - Equipos de sonido - Accesorios para músicos - Reparación de instrumentos de cuerda.
                 </p>
 
-                <p>Santiago, Chile</p>
+                <p>Viña del Mar, Región de Valparaíso</p>
 
                 <p>Lunes a viernes · 09:00 a 18:00 hrs.</p>
             </section>
@@ -261,8 +298,8 @@
             <section class="footer-columna">
                 <h2>Servicios</h2>
 
-                <p>Venta de productos de audio.</p>
-                <p>Reparación de equipos.</p>
+                <p>Venta de instrumentos musicales.</p>
+                <p>Reparación de instrumentos de cuerda.</p>
             </section>
 
             <section class="footer-columna">

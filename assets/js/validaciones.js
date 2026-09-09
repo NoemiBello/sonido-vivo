@@ -140,7 +140,11 @@ function validarCorreo(valor) {
     }
 
 
-    if (!valor.includes("@")) {
+    const formatoCorreo =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+    if (!formatoCorreo.test(valor)) {
 
         mostrarError(
             correo,
