@@ -1530,6 +1530,22 @@ VIDEO SERVICIOS
 }
 
 /* =========================================================
+   CATÁLOGO RESPONSIVE - CELULAR
+   ========================================================= */
+
+@media (max-width: 767px) {
+    .grilla-productos {
+        grid-template-columns: 1fr;
+        width: 92%;
+        gap: 25px;
+    }
+
+    .tarjeta-producto {
+        width: 100%;
+    }
+}
+
+/* =========================================================
    CARRUSEL RESPONSIVE - CELULAR
    ========================================================= */
 
